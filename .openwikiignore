@@ -1,0 +1,32 @@
+# Security & Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+**/secrets/**
+
+# Dependencies & Environments
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Data dumps and heavy binaries
+private/
+local-data/
+raw-data/
+experiments/private/
+notes/private/
+*.parquet
+*.feather
+*.sqlite
+*.db
+
+# Build artifacts & OS caches
+dist/
+build/
+coverage/
+.DS_Store
+Thumbs.db

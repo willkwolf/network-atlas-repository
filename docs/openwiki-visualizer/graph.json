@@ -1,0 +1,809 @@
+{
+  "root": "openwiki",
+  "generatedAt": "2026-10-19T03:52:12.090Z",
+  "types": [
+    "catalog",
+    "concept",
+    "governance",
+    "guide",
+    "index",
+    "log",
+    "tool"
+  ],
+  "nodes": [
+    {
+      "id": "catalog/datasets-and-benchmarks",
+      "title": "Datasets, Benchmarks y Repositorios de Redes",
+      "type": "catalog",
+      "description": "Colecciones públicas de grafos del mundo real, suites de evaluación estándar y generadores sintéticos.",
+      "tags": [
+        "datasets",
+        "benchmarks",
+        "snap",
+        "ogb",
+        "network-repository",
+        "openalex"
+      ],
+      "body": "\n# Datasets, Benchmarks y Repositorios de Redes\n\nPara validar algoritmos, probar rendimiento de layouts o entrenar modelos de aprendizaje sobre grafos, es indispensable contar con datos empíricos bien documentados.\n\n## Repositorios Canónicos y Fuentes Abiertas\n\n| Repositorio | Tipos de Grafos | Volumen / Escala | Enfoque Principal |\n|---|---|---|---|\n| **[Stanford SNAP Datasets](https://snap.stanford.edu/data/)** | Redes sociales, citas, web graphs, redes de colaboración | Miles a decenas de millones de nodos | Colección clásica de Stanford para investigación empírica en ciencia de redes. |\n| **[Open Graph Benchmark (OGB)](https://ogb.stanford.edu/)** | Grafos moleculares, citas y conocimiento | Escala variable (nodo, arista, grafo completo) | Suite estandarizada para evaluar Graph Neural Networks (GNN) con particiones reproducibles de train/test. |\n| **[Network Repository](https://networkrepository.com/)** | Redes biológicas, redes tecnológicas, grafos cerebrales, interacción social | Más de 5000 redes interactivas | El primer repositorio con visualizaciones interactivas y herramientas de comparación estadística directa. |\n| **[OpenAlex](https://openalex.org/)** | Grafo bibliométrico y de literatura académica global | Cientos de millones de publicaciones, autores, instituciones y conceptos | Catálogo abierto que reemplaza fuentes propietarias para estudios de cienciometría y redes de coautoría. |\n\n---\n\n## Generadores Sintéticos de Grafos\n\n- **Modelos de Grafo Aleatorio (Erdős–Rényi):** Útiles como baseline nulo, aunque carecen de clustering alto ni colas pesadas de grado.\n- **Modelos de Pequeño Mundo (Watts–Strogatz):** Alto clustering y longitud de camino promedio corta.\n- **Modelos de Conexión Preferencial (Barabási–Albert):** Distribución de grados libre de escala (scale-free power law).\n- **Modelos de Bloques Estocásticos (SBM):** Grafos con estructura de comunidades explícita y controlada para evaluar algoritmos de clustering.\n\n---\n\n## Páginas Relacionadas\n- [Evaluación y Benchmarking](../concepts/evaluation-and-benchmarking.md)\n- [Análisis en Python](python-analysis.md)\n- [Formatos e Interoperabilidad](formats-and-interoperability.md)\n",
+      "size": 2180,
+      "links": [
+        "concepts/evaluation-and-benchmarking",
+        "catalog/python-analysis",
+        "catalog/formats-and-interoperability"
+      ],
+      "backlinks": [
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "catalog/desktop-and-gui",
+      "title": "Herramientas de Exploración Desktop y Aplicaciones GUI",
+      "type": "catalog",
+      "description": "Software de escritorio y plataformas interactivas para exploración visual, análisis exploratorio y bibliometría sin código.",
+      "tags": [
+        "desktop",
+        "gui",
+        "gephi",
+        "cytoscape",
+        "graphia",
+        "vosviewer",
+        "tulip"
+      ],
+      "body": "\n# Herramientas de Exploración Desktop y Aplicaciones GUI\n\nHerramientas para analistas, científicos e investigadores que necesitan cargar datos, ajustar layouts y explorar redes interactivamente sin construir una aplicación web.\n\n## Comparativa de Herramientas Principales\n\n| Herramienta | Dominio Principal | Motor / Layouts | Escala Típica | Cuándo Usarla | Precauciones |\n|---|---|---|---|---|---|\n| **[Gephi](https://gephi.org/)** | Propósito general | ForceAtlas2, OpenOrd, Yifan Hu | Hasta ~500k aristas | Primera exploración visual, filtrado por atributos y exportación de imágenes vectoriales. | El rendimiento decae severamente si no se asigna memoria JVM adecuada (`gephi.conf`). |\n| **[Cytoscape](https://cytoscape.org/)** | Biología molecular y redes complejas | Prefuse, Spring-embedded, apps de terceros | Hasta ~200k aristas | Redes biomoleculares, integración con Gene Ontology, rutas metabólicas y plugins biológicos. | No confundir con Cytoscape.js (biblioteca web). Es pesado para análisis puramente estadísticos. |\n| **[Graphia](https://graphia.app/)** | Redes científicas y 3D | Motor nativo acelerado por hardware | Hasta ~1M aristas | Visualización 2D/3D de datos de expresión génica, correlación y matrices densas. | Requiere GPU dedicada moderna para una experiencia fluida. |\n| **[Tulip](https://tulip.labri.fr/)** | Investigación en visualización | C++ / OpenGL modular con scripting Python | Hasta ~1M aristas | Algoritmos a medida, manipulación jerárquica y clustering multinivel. | Curva de aprendizaje técnica más empinada que Gephi. |\n| **[VOSviewer](https://www.vosviewer.com/)** | Bibliometría y cienciometría | VOS (Visualization of Similarities) | Hasta ~100k publicaciones | Mapeo de coautorías, cocitación y coocurrencia de palabras clave. | No es una herramienta para grafos de propósito general; asume matrices de proximidad bibliométrica. |\n| **[NodeXL](https://nodexl.com/)** | Redes sociales en hojas de cálculo | Integración con Excel | Hasta ~50k aristas | Analistas de marketing y sociología habituados a Microsoft Excel. | Versión Basic muy limitada; versión Pro de pago. |\n| **[Pajek](http://mrvar.fdv.uni-lj.si/pajek/)** | Redes sociales masivas | Algoritmos de optimización clásica en memoria | Hasta varios millones de aristas | Algoritmos tradicionales de SNA sobre redes grandes en Windows. | Interfaz de usuario obsoleta; formato de datos específico (`.net`). |\n\n---\n\n## Recursos con Verificación Pendiente\n- **Gephisto:** Enlace pendiente de resolución en el catálogo original (`verification_status: needs_link_resolution`). No se debe recomendar para producción sin antes verificar su identidad y repositorio.\n- **GraphInsight:** Enlace pendiente de resolución en el catálogo original.\n\n---\n\n## Páginas Relacionadas\n- [Bibliotecas de Visualización Web](web-visualization.md)\n- [Análisis en Python](python-analysis.md)\n- [Framework de Decisión](../concepts/decision-framework.md)\n",
+      "size": 2935,
+      "links": [
+        "catalog/web-visualization",
+        "catalog/python-analysis",
+        "concepts/decision-framework"
+      ],
+      "backlinks": [
+        "catalog/formats-and-interoperability",
+        "catalog/web-visualization",
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "catalog/formats-and-interoperability",
+      "title": "Formatos de Archivo e Interoperabilidad de Grafos",
+      "type": "catalog",
+      "description": "Estándares de serialización, conversión entre herramientas y preservación de atributos tipados y temporales.",
+      "tags": [
+        "formats",
+        "interoperability",
+        "graphml",
+        "gexf",
+        "parquet",
+        "json",
+        "csv"
+      ],
+      "body": "\n# Formatos de Archivo e Interoperabilidad de Grafos\n\nLa elección del formato de intercambio determina si los atributos de nodos, las coordenadas visuales y las marcas temporales se preservan o se pierden al transferir datos entre herramientas.\n\n## Comparativa de Formatos de Red\n\n| Formato | Estructura Base | Soporte de Atributos Tipados | Soporte Temporal | Eficiencia / Tamaño | Herramientas Principales |\n|---|---|:---:|:---:|---|---|\n| **GraphML** (`.graphml`) | XML formal | Sí (enteros, floats, strings, booleanos declarados en header) | Limitado (como atributos personalizados) | Media (verboso por etiquetas XML) | NetworkX, igraph, Gephi, Cytoscape, Tulip. Formato estándar universal más confiable. |\n| **GEXF** (`.gexf`) | XML jerárquico | Sí | Nativo (soporta intervalos temporales dinámicos y evolución de atributos) | Media | Gephi, Sigma.js, Graphology. Excelente para redes que cambian en el tiempo. |\n| **CSV / TSV** (Pares) | Texto plano tabular | No en archivo único (requiere archivo separado de nodos y otro de aristas) | Posible si se agrega columna de timestamp | Alta (fácil de comprimir en gzip/zip) | Pandas, Excel, R, bases de datos SQL. Ideal para pipelines ETL. |\n| **JSON-Graph / Node-Link JSON** | JSON | Sí | Posible | Baja a media para redes grandes | D3.js, Cytoscape.js, APIs web. Fácil de consumir en JavaScript. |\n| **Parquet / Arrow** | Columnar binario | Sí (esquema estricto y compresión eficiente) | Sí | Muy alta (10x-50x más rápido que texto) | Kùzu, cuGraph, DuckDB, Spark. Formato recomendado para redes de >5M aristas. |\n| **Pajek** (`.net`) | Texto plano posicional | Muy limitado | No | Alta | Pajek, programas clásicos de SNA. |\n| **DOT** (`.dot`, `.gv`) | Lenguaje de definición Graphviz | Enfocado en atributos de renderizado gráfico | No | Media | Graphviz, pydot, Doxygen. Ideal para diagramas jerárquicos. |\n\n---\n\n## Directrices de Interoperabilidad\n\n1. **Evitar CSV sin esquema para atributos complejos:** Al compartir datos relacionales con atributos heterogéneos, preferir `GraphML` para garantizar que los tipos de datos no se conviertan todos en texto.\n2. **Para redes temporales continuas:** Usar `GEXF` si el destino es exploración visual en Gephi, o tablas `Parquet` con columnas `source`, `target`, `timestamp` para pipelines analíticos de Python.\n\n---\n\n## Páginas Relacionadas\n- [Herramientas Desktop y GUI](desktop-and-gui.md)\n- [Visualización Web](web-visualization.md)\n- [Arquitectura y Modelo de Datos](../concepts/architecture-and-data-model.md)\n",
+      "size": 2516,
+      "links": [
+        "catalog/desktop-and-gui",
+        "catalog/web-visualization",
+        "concepts/architecture-and-data-model"
+      ],
+      "backlinks": [
+        "catalog/datasets-and-benchmarks",
+        "catalog/graph-databases-and-query",
+        "concepts/evaluation-and-benchmarking",
+        "index"
+      ]
+    },
+    {
+      "id": "catalog/graph-databases-and-query",
+      "title": "Bases de Datos de Grafos y Motores de Consulta",
+      "type": "catalog",
+      "description": "Motores de persistencia de grafos de propiedades (LPG), bases RDF y tecnologías de consulta analítica.",
+      "tags": [
+        "graph-databases",
+        "neo4j",
+        "memgraph",
+        "kuzu",
+        "cypher",
+        "sparql"
+      ],
+      "body": "\n# Bases de Datos de Grafos y Motores de Consulta\n\nUna base de datos de grafos proporciona persistencia transaccional (ACID), indexación relacional y lenguajes declarativos de consulta (Cypher, GQL, SPARQL, Gremlin).\n\n> [!NOTE]\n> **Distinción Crítica:** Una base de datos almacena y recupera caminos eficientemente (punteros a memoria en tiempo constante \\(O(1)\\) por salto de arista). No está optimizada por defecto para algoritmos globales de ciencia de redes (como Betweenness sobre todo el grafo), a menos que incorpore extensiones especializadas (como Neo4j GDS).\n\n## Motores Principales y Comparativa\n\n| Motor | Tipo de Base | Lenguaje de Consulta | Arquitectura / Rendimiento | Casos de Uso Recomendados |\n|---|---|---|---|---|\n| **[Neo4j](https://neo4j.com/)** | Grafo de Propiedades (LPG) | Cypher / GQL | Motor nativo en disco con caché; ecosistema maduro (APOC, GDS, Bloom) | Aplicaciones empresariales, detección de fraude, grafos de conocimiento corporativo y gestión de identidades. |\n| **[Memgraph](https://memgraph.com/)** | Grafo de Propiedades en memoria | Cypher | Motor en C++ 100% en memoria con persistencia en disco y soporte de streaming de eventos (Kafka) | Análisis y consultas en tiempo real con latencias de submilisegundos y transacciones de alta frecuencia. |\n| **[Kùzu](https://kuzudb.com/)** | Grafo embebido (OLAP) | Cypher | Motor columnar embebido en C++ (el equivalente a DuckDB para grafos) | Analítica rápida de grafos local sin levantar servidores pesados; ideal para pipelines de Python con exportación directa a PyArrow/Pandas. |\n| **[Apache AGE](https://age.apache.org/)** | Extensión multi-modelo | Cypher sobre PostgreSQL | Extensión relacional para bases de datos PostgreSQL | Equipos con infraestructura existente de Postgres que necesitan consultar relaciones en Cypher sin migrar de base de datos. |\n\n---\n\n## Visualizadores Comerciales y de Consulta sobre Bases de Datos\n\n- **[Neo4j Bloom](https://neo4j.com/product/bloom/)**: Exploración visual orientada a usuarios de negocio sobre instancias de Neo4j.\n- **[Linkurious](https://linkurious.com/)**: Plataforma de investigación empresarial y detección de anomalías para analistas de fraude e inteligencia.\n- **[Graphistry](https://www.graphistry.com/)**: Visualización e investigación de grafos acelerada por GPU en la nube.\n\n---\n\n## Páginas Relacionadas\n- [Computación a Escala](scale-gpu-distributed.md)\n- [Formatos e Interoperabilidad](formats-and-interoperability.md)\n- [Framework de Decisión](../concepts/decision-framework.md)\n",
+      "size": 2531,
+      "links": [
+        "catalog/scale-gpu-distributed",
+        "catalog/formats-and-interoperability",
+        "concepts/decision-framework"
+      ],
+      "backlinks": [
+        "catalog/scale-gpu-distributed",
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "catalog/python-analysis",
+      "title": "Bibliotecas de Análisis y Modelado de Redes en Python",
+      "type": "catalog",
+      "description": "Ecosistema Python para ciencia de redes, manipulación matricial, detección de comunidades y visualización en notebooks.",
+      "tags": [
+        "python",
+        "networkx",
+        "igraph",
+        "graph-tool",
+        "networkit",
+        "cdlib"
+      ],
+      "body": "\n# Bibliotecas de Análisis y Modelado de Redes en Python\n\nPython es el lenguaje estándar para ciencia de datos y redes complejas. La elección de biblioteca depende estrictamente del volumen de datos y los requisitos de memoria.\n\n## Comparativa de Rendimiento y Características\n\n| Biblioteca | Núcleo de Implementación | Memoria por Nodo/Arista | Algoritmos y Métricas | Mejor Caso de Uso | Cuándo Descartar |\n|---|---|---|---|---|---|\n| **[NetworkX](https://networkx.org/)** | Python puro (diccionarios de diccionarios) | Alta (~1KB / elemento) | Catálogo más amplio de algoritmos, generadores y métricas | Prototipado, docencia, algoritmos personalizados, grafos con <100k aristas. | Redes de >1M aristas o pipelines donde el tiempo de cálculo sea crítico. |\n| **[python-igraph](https://igraph.org/python/)** | C con bindings Python | Baja | Cobertura excelente de algoritmos clásicos, layouts y comunidades | Redes medianas y grandes en un solo nodo con balance perfecto entre velocidad y facilidad. | Si se requiere personalización profunda de algoritmos no implementados en C. |\n| **[graph-tool](https://graph-tool.skewed.de/)** | C++ (Boost Graph) con metaprogramación | Muy baja | Métodos avanzados de inferencia bayesiana de bloques estocásticos (SBM) y paralelismo OpenMP | Modelado estadístico riguroso, SBM y redes de millones de elementos en CPU. | Instalación compleja (requiere binarios compilados y paquetes de sistema en Linux/macOS). |\n| **[NetworKit](https://networkit.github.io/)** | C++ con OpenMP | Extremadamente baja | Algoritmos paralelos masivos: PageRank, k-core, Betweenness aproximada | Análisis de redes a gran escala en servidores multinúcleo. | Catálogo de algoritmos más reducido comparado con NetworkX. |\n| **[rustworkx](https://www.rustworkx.org/)** | Rust | Muy baja | Algoritmos de alto rendimiento originalmente creados para Qiskit | Integración de grafos rápidos y libres de memoria compartida en Python. | Funcionalidades de redes complejas (layouts, comunidades complejas) limitadas. |\n| **[CDlib](https://cdlib.readthedocs.io/)** | Python / wrappers C | Variable | Más de 50 algoritmos de detección de comunidades y suites de evaluación de calidad | Investigación y comparación sistemática de particiones y comunidades. | No provee layouts gráficos ni análisis de caminos mínimos. |\n\n---\n\n## Visualización Interactiva en Jupyter Notebooks\n\n- **[PyVis](https://pyvis.readthedocs.io/)**: Exporta grafos de NetworkX a HTML interactivo basado en vis.js directamente dentro de celdas de Jupyter.\n- **[ipysigma](https://github.com/medialab/ipysigma)**: Widget de Jupyter para visualizar grafos con Sigma.js usando aceleración WebGL sin salir del notebook.\n- **[ipycytoscape](https://github.com/cytoscape/ipycytoscape)**: Integración bidireccional de Cytoscape.js con widgets de Jupyter.\n- **[py4cytoscape](https://py4cytoscape.readthedocs.io/)**: Control programático de la aplicación de escritorio Cytoscape mediante su API REST (CyREST).\n\n---\n\n## Páginas Relacionadas\n- [Análisis en R y Estadística](r-and-statistics.md)\n- [Computación a Escala y GPU](scale-gpu-distributed.md)\n- [Taxonomía y Dimensiones](../concepts/taxonomy-and-dimensions.md)\n",
+      "size": 3182,
+      "links": [
+        "catalog/r-and-statistics",
+        "catalog/scale-gpu-distributed",
+        "concepts/taxonomy-and-dimensions"
+      ],
+      "backlinks": [
+        "catalog/datasets-and-benchmarks",
+        "catalog/desktop-and-gui",
+        "catalog/r-and-statistics",
+        "catalog/scale-gpu-distributed",
+        "catalog/temporal-and-higher-order",
+        "catalog/web-visualization",
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "catalog/r-and-statistics",
+      "title": "Análisis de Redes y Estadística en R",
+      "type": "catalog",
+      "description": "Ecosistema R para bioestadística, manipulación tidy de redes, modelado ERGM y publicaciones reproducibles.",
+      "tags": [
+        "r",
+        "tidygraph",
+        "ggraph",
+        "statnet",
+        "ergm",
+        "igraph-r"
+      ],
+      "body": "\n# Análisis de Redes y Estadística en R\n\nEl ecosistema R destaca en la reproducibilidad académica, bioinformática y el modelado estadístico formal de redes sociales (ERGM / SAOM).\n\n## Principales Paquetes y Enfoques\n\n| Paquete | Paradigma | Propósito Principal | Cuándo Usarlo |\n|---|---|---|---|\n| **[igraph (R)](https://igraph.org/r/)** | Funcional / Matriz C | Cálculo algorítmico de alto rendimiento y métricas de red | Base computacional para la mayoría de análisis cuantitativos en R. |\n| **[tidygraph](https://tidygraph.data-imaginist.com/)** | Tidyverse (`tbl_graph`) | Manipulación de nodos y aristas como data frames coordinados vía verbos de `dplyr` | Flujos de limpieza, filtrado relacional y análisis reproducible estructurado. |\n| **[ggraph](https://ggraph.data-imaginist.com/)** | Gramática de Gráficos (`ggplot2`) | Visualización estática de alta calidad tipográfica para publicaciones científicas | Creación de figuras vectoriales (PDF/SVG) listas para artículos y libros. |\n| **[statnet](https://statnet.org/)** | Modelado estocástico | Modelos de Grafos Aleatorios Exponenciales (ERGM) y redes de actores latentes | Pruebas de hipótesis sociológicas sobre mecanismos de formación de aristas (homofilia, transitividad). |\n| **[visNetwork](https://datastorm-open.github.io/visNetwork/)** | HTMLWidgets | Visualizaciones interactivas incrustadas en informes R Markdown o Shiny | Dashboards web interactivos creados puramente en código R. |\n| **[ndtv](https://cran.r-project.org/package=ndtv)** | Animación temporal | Animaciones de redes dinámicas y líneas de tiempo relacionales | Demostración visual de la evolución temporal de redes pequeñas y medianas. |\n\n---\n\n## Páginas Relacionadas\n- [Análisis en Python](python-analysis.md)\n- [Redes Temporales y Orden Superior](temporal-and-higher-order.md)\n- [Framework de Decisión](../concepts/decision-framework.md)\n",
+      "size": 1877,
+      "links": [
+        "catalog/python-analysis",
+        "catalog/temporal-and-higher-order",
+        "concepts/decision-framework"
+      ],
+      "backlinks": [
+        "catalog/python-analysis",
+        "index"
+      ]
+    },
+    {
+      "id": "catalog/scale-gpu-distributed",
+      "title": "Computación de Grafos a Escala, GPU y Sistemas Distribuidos",
+      "type": "catalog",
+      "description": "Frameworks para procesar decenas de millones de aristas con aceleración por hardware o clústeres distribuidos.",
+      "tags": [
+        "scale",
+        "gpu",
+        "distributed",
+        "cugraph",
+        "graphscope",
+        "dgl",
+        "pyg"
+      ],
+      "body": "\n# Computación de Grafos a Escala, GPU y Sistemas Distribuidos\n\nCuando las redes superan la memoria RAM de una máquina individual (~5-10 millones de aristas), o cuando los algoritmos de centralidad requieren horas de cálculo, es indispensable adoptar tecnologías masivamente paralelas.\n\n## Comparativa de Tecnologías a Escala\n\n| Solución | Arquitectura | Escala Operativa | Aceleración | Casos de Uso Típicos |\n|---|---|---|---|---|\n| **[RAPIDS cuGraph](https://github.com/rapidsai/cugraph)** | GPU NVIDIA (CUDA/C++) con API Python compatible con NetworkX | 10M - 500M+ aristas (según VRAM) | Aceleración masiva (10x-100x frente a CPU) | PageRank, Louvain, Betweenness sobre redes gigantescas en segundos. Requiere GPUs NVIDIA con memoria VRAM suficiente. |\n| **[GraphScope](https://graphscope.io/)** | Motor distribuido C++ / Kubernetes | Miles de millones de aristas | CPU distribuida (MPI) + GPU | Procesamiento unificado de grafos: analítica interactiva (GRAPE), consultas interactivas (GAIA) y GNNs (GLearn). |\n| **[PyTorch Geometric (PyG)](https://pytorch-geometric.readthedocs.io/)** | Framework Deep Learning (PyTorch) | Decenas de millones | GPU (Tensor Cores) | Graph Neural Networks (GCN, GAT, GraphSAGE), clasificación de nodos y predicción de enlaces con aprendizaje profundo. |\n| **[DGL (Deep Graph Library)](https://www.dgl.ai/)** | Deep Learning agnóstico (PyTorch, TensorFlow, MXNet) | Masivo distribuido | GPU / Clúster | Entrenamiento de GNNs a gran escala sobre grafos heterogéneos y conocimiento. |\n\n---\n\n## Directrices de Decisión: ¿Realmente necesitas computación distribuida?\n\n> [!WARNING]\n> La latencia de red y la sobrecarga de sincronización en clústeres distribuidos pueden hacer que un algoritmo corra más lento en 10 nodos que en una sola máquina con un binario C++ optimizado (`NetworKit` o `graph-tool`).\n> \n> Antes de montar un clúster:\n> 1. Intenta optimizar las estructuras de datos (matrices CSR en lugar de listas de objetos).\n> 2. Evalúa un servidor con 128-512GB de RAM mononodo.\n> 3. Considera una GPU con 24GB-80GB de VRAM corriendo `cuGraph`.\n\n---\n\n## Páginas Relacionadas\n- [Análisis en Python](python-analysis.md)\n- [Evaluación y Benchmarking](../concepts/evaluation-and-benchmarking.md)\n- [Bases de Datos de Grafos](graph-databases-and-query.md)\n",
+      "size": 2291,
+      "links": [
+        "catalog/python-analysis",
+        "concepts/evaluation-and-benchmarking",
+        "catalog/graph-databases-and-query"
+      ],
+      "backlinks": [
+        "catalog/graph-databases-and-query",
+        "catalog/python-analysis",
+        "concepts/evaluation-and-benchmarking",
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "catalog/temporal-and-higher-order",
+      "title": "Redes Temporales, Multicapa y de Orden Superior",
+      "type": "catalog",
+      "description": "Bibliotecas para modelar sistemas donde el tiempo, las múltiples capas de interacción o las relaciones grupales (>2 nodos) son fundamentales.",
+      "tags": [
+        "temporal",
+        "higher-order",
+        "hypergraphs",
+        "multilayer",
+        "raphtory",
+        "xgi",
+        "hypernetx"
+      ],
+      "body": "\n# Redes Temporales, Multicapa y de Orden Superior\n\nMuchas redes del mundo real no pueden ser reducidas a pares estáticos de nodos sin perder información crítica sobre causalidad o cooperación grupal.\n\n## 1. Redes Temporales y de Eventos\n\n| Biblioteca | Modelo Temporal | Características Clave |\n|---|---|---|\n| **[Raphtory](https://www.raphtory.com/)** | Grafos dinámicos en streaming (Rust + Python) | Mantiene el grafo como un flujo continuo de eventos temporales; permite consultas sobre ventanas de tiempo deslizantes, vistas históricas en cualquier timestamp y cálculo de métricas temporales escalables. |\n| **[pathpy](https://www.pathpy.net/)** | Caminos de orden superior (Higher-Order Paths) | Modela la dinámica causal en secuencias temporales para evitar la falacia de asumir que las aristas adyacentes son transitivas en el tiempo. |\n| **[ndtv](https://cran.r-project.org/package=ndtv)** (R) | Snapshots y animaciones discretas | Visualización pedagógica de cambios estructurales paso a paso a lo largo del tiempo. |\n\n---\n\n## 2. Hipergrafos y Complejos Simpliciales (Relaciones > 2 Entidades)\n\nCuando una relación involucra a 3 o más entidades simultáneamente (ej. coautoría de un artículo entre 5 investigadores, reacciones químicas entre reactivos y catalizadores, grupos de chat), proyectar el hipergrafo a aristas binarias genera *cliques* artificiales que distorsionan la densidad y las métricas de clustering.\n\n| Biblioteca | Enfoque | Cuándo Usarla |\n|---|---|---|\n| **[XGI](https://github.com/xgi-org/xgi)** | Hipergrafos y complejos simpliciales en Python | Modelado de orden superior con API inspirada en NetworkX, cálculo de centralidades de hipergrafo, clustering de orden superior y dibujo de hipergrafos. |\n| **[HyperNetX](https://github.com/pnnl/hypernetx)** (PNNL) | Hipergrafos generales y visualizaciones Euler/Venn | Visualización interactiva y análisis de hipergrafos mediante diagramas bipartitos o representaciones de conjuntos. |\n\n---\n\n## 3. Redes Multicapa (Multilayer Networks)\n\n- **[Py3Plex](https://github.com/SkBlaz/py3plex)**: Redes heterogéneas multicapa y multiplex en Python.\n- **[multinet](https://github.com/cran/multinet)**: Análisis de redes multicapa en R, evaluando overlap entre capas y coeficientes de clustering intercapa.\n\n---\n\n## Páginas Relacionadas\n- [Taxonomía y Dimensiones](../concepts/taxonomy-and-dimensions.md)\n- [Análisis en Python](python-analysis.md)\n- [Framework de Decisión](../concepts/decision-framework.md)\n",
+      "size": 2478,
+      "links": [
+        "concepts/taxonomy-and-dimensions",
+        "catalog/python-analysis",
+        "concepts/decision-framework"
+      ],
+      "backlinks": [
+        "catalog/r-and-statistics",
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "catalog/web-visualization",
+      "title": "Bibliotecas de Visualización Web para Aplicaciones",
+      "type": "catalog",
+      "description": "SDKs y bibliotecas JavaScript/TypeScript para integrar redes interactivas en navegadores (Canvas, WebGL y SVG).",
+      "tags": [
+        "web",
+        "javascript",
+        "typescript",
+        "sigma-js",
+        "cytoscape-js",
+        "cosmograph",
+        "g6",
+        "xyflow"
+      ],
+      "body": "\n# Bibliotecas de Visualización Web para Aplicaciones\n\nHerramientas para ingenieros de frontend que necesitan incrustar redes interactivas en aplicaciones web modernas (React, Vue, Svelte o JavaScript vanilla).\n\n## Matriz de Selección Tecnológica\n\n| Biblioteca | Tecnología de Render | Capacidad de Nodos | Punto Fuerte | Casos Ideales | Riesgos y Límites |\n|---|---|---|---|---|---|\n| **[Sigma.js](https://www.sigmajs.org/)** | WebGL (vía WebGL2/Three.js) | 100k - 500k | Renderizado hiper-eficiente de grafos estáticos o dinámicos | Dashboards analíticos, exploración de grandes redes corporativas. | No incluye un modelo de datos propio; se empareja obligatoriamente con **[Graphology](https://graphology.github.io/)**. |\n| **[Cytoscape.js](https://js.cytoscape.org/)** | HTML5 Canvas | 1k - 20k | Ecosistema inmenso de layouts, algoritmos graph-theory en JS y estilado CSS-like | Aplicaciones bioinformáticas, análisis de impacto en topología IT. | Pérdida drástica de FPS con más de 20.000 nodos/aristas en movimiento simultáneo. |\n| **[Cosmograph](https://cosmograph.app/docs-lib/)** | WebGL GPU puro | 100k - 2M+ | Simulación por fuerzas ejecutada directamente en compute shaders de GPU | Redes masivas en tiempo real donde el usuario requiere zoom continuo y pan a 60 FPS. | API más rígida para estilado personalizado por nodo individual; verificar términos de licencia. |\n| **[AntV G6](https://g6.antv.antgroup.com/)** | Canvas / SVG / WebGL | 10k - 100k | Framework completo de Ant Group con layouts industriales y árboles jerárquicos | Aplicaciones empresariales, árboles de decisión, organigramas y grafos de conocimiento. | Documentación histórica predominantemente en chino, aunque la versión actual tiene traducciones completas. |\n| **[react-force-graph](https://github.com/vasturiano/react-force-graph)** | Canvas / WebGL / Three.js | 5k - 50k | Integración nativa sin fricción para ecosistemas React (2D, 3D y VR) | Prototipos rápidos, visualización 3D experimental. | La navegación en perspectiva 3D puede oscurecer relaciones y confundir la interpretación de distinciones geodésicas. |\n| **[xyflow](https://xyflow.com/)** (React Flow / Svelte Flow) | DOM / SVG / Canvas | 100 - 5k | Editores basados en nodos con drag-and-drop, handles y conexiones reactivas | Editores de pipelines (ETL), diagramas de workflows, flujos conversacionales de IA. | **No es un motor de análisis de redes:** no está diseñado para cálculos de centralidad ni simulación física de grafos complejos. |\n\n---\n\n## Patrones de Arquitectura Web Recomendados\n\n1. **Desacoplar Modelo y Render:**\n   - Mantener el grafo en memoria con `Graphology` en un Web Worker.\n   - Usar `Sigma.js` solo para el renderizado visual, evitando bloquear el hilo principal de la interfaz con cálculos de layout.\n2. **Filtrado del Lado del Servidor:**\n   - Nunca transferir 10 millones de aristas al navegador cliente. Emplear técnicas de muestreo inducido o clustering (k-core decomposition) en el backend y enviar al cliente representaciones agregadas.\n\n---\n\n## Páginas Relacionadas\n- [Herramientas Desktop y GUI](desktop-and-gui.md)\n- [Análisis en Python](python-analysis.md)\n- [Arquitectura y Modelo de Datos](../concepts/architecture-and-data-model.md)\n",
+      "size": 3227,
+      "links": [
+        "catalog/desktop-and-gui",
+        "catalog/python-analysis",
+        "concepts/architecture-and-data-model"
+      ],
+      "backlinks": [
+        "catalog/desktop-and-gui",
+        "catalog/formats-and-interoperability",
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "concepts/architecture-and-data-model",
+      "title": "Arquitectura y Modelo de Datos de Network Atlas",
+      "type": "concept",
+      "description": "Detalle del modelo formal de datos, esquema de validación JSON, sincronización CSV y fuentes de verdad del catálogo.",
+      "tags": [
+        "architecture",
+        "data-model",
+        "json-schema",
+        "validation",
+        "resources"
+      ],
+      "body": "\n# Arquitectura y Modelo de Datos\n\nNetwork Atlas separa estrictamente el almacenamiento canónico estructurado de las vistas de presentación y consulta.\n\n## 1. Fuentes Canónicas de Verdad\n\n- **`data/resources.json`**: Fuente primaria y canónica que contiene el array de objetos de recursos. Todo recurso añadido o modificado debe existir aquí con identificadores únicos.\n- **`data/resources.csv`**: Vista tabular aplanada derivada de `resources.json`, optimizada para lectura en hojas de cálculo y análisis con pandas/R.\n- **`data/domain-taxonomy.json`**: Definición taxonómica formal de categorías primarias, modelos de red, entornos, bandas de escala y estados de verificación.\n- **`agents/resource.schema.json`**: Esquema JSON (Draft-07) estricto utilizado para validar la integridad del catálogo.\n\n```mermaid\nflowchart LR\n    A[\"data/domain-taxonomy.json\"] --> C[\"Validación (scripts/validate_registry.py)\"]\n    B[\"agents/resource.schema.json\"] --> C\n    D[\"data/resources.json (Canónico)\"] --> C\n    D --> E[\"data/resources.csv (Exportación)\"]\n    D --> F[\"scripts/find_resources.py (CLI)\"]\n    D --> G[\"openwiki/ (Base de Conocimiento OKF)\"]\n```\n\n---\n\n## 2. Esquema Formal del Recurso (`resource.schema.json`)\n\nCada registro en `resources.json` implementa las siguientes propiedades:\n\n| Campo | Tipo | Obligatorio | Descripción |\n|---|---|:---:|---|\n| `id` | `string` | Sí | Identificador kebab-case único (ej. `gephi`, `networkx`, `sigma-js`). |\n| `name` | `string` | Sí | Nombre oficial del software, biblioteca o dataset. |\n| `primary_category` | `string` | Sí | Identificador de categoría definido en `domain-taxonomy.json`. |\n| `secondary_categories` | `array[string]` | No | Categorías adicionales aplicables. |\n| `network_types` | `array[string]` | Sí | Modelos soportados: `static`, `temporal`, `multilayer`, `hypergraph`, `bipartite`, `directed`, `weighted`. |\n| `scale_band` | `string` | Sí | Capacidad de escala: `small_in_memory`, `medium_single_node`, `large_gpu_or_disk`, `scale_distributed`. |\n| `environments` | `array[string]` | Sí | Entornos: `python`, `r`, `javascript`, `web`, `desktop_gui`, `cli`, `c_cpp`, `gpu`. |\n| `description` | `string` | Sí | Resumen conciso de la funcionalidad central. |\n| `primary_url` | `string` | Sí | URL canónica de documentación o repositorio oficial. |\n| `source_url` | `string` | No | Repositorio de código fuente (si difiere de `primary_url`). |\n| `license` | `string` | No | Licencia de software (ej. `GPL-3.0`, `MIT`, `Apache-2.0`, `Proprietary`). |\n| `verification_status` | `string` | Sí | `verified`, `provisional`, `needs_link_resolution`. |\n\n---\n\n## 3. Protocolo de Validación Continua\n\nPara garantizar que no ingresen registros incompletos o taxonomías inválidas:\n\n```bash\npython scripts/validate_registry.py\n```\n\nEl script verifica:\n1. Unicidad de todos los `id`.\n2. Coincidencia estricta de `primary_category` con `domain-taxonomy.json`.\n3. Presencia de campos obligatorios.\n4. Identificación de recursos con enlaces pendientes de resolución.\n\n---\n\n## Páginas Relacionadas\n- [Taxonomía y Dimensiones](taxonomy-and-dimensions.md)\n- [Herramientas CLI y Scripts](../tools/cli-and-automation.md)\n- [Índice Maestro OpenWiki](../index.md)\n",
+      "size": 3204,
+      "links": [
+        "concepts/taxonomy-and-dimensions",
+        "tools/cli-and-automation",
+        "index"
+      ],
+      "backlinks": [
+        "catalog/formats-and-interoperability",
+        "catalog/web-visualization",
+        "concepts/taxonomy-and-dimensions",
+        "governance/policies-and-contribution",
+        "index",
+        "quickstart",
+        "tools/cli-and-automation"
+      ]
+    },
+    {
+      "id": "concepts/decision-framework",
+      "title": "Framework de Decisión y Criterios de Selección",
+      "type": "concept",
+      "description": "Árboles de decisión, preguntas obligatorias y criterios de Buy vs Build para seleccionar la herramienta correcta.",
+      "tags": [
+        "decision-framework",
+        "decision-tree",
+        "buy-vs-build",
+        "evaluation"
+      ],
+      "body": "\n# Framework de Decisión y Criterios de Selección\n\nEl núcleo de Network Atlas es un sistema de decisión para transformar una necesidad técnica en una terna o cuarteto de opciones fundamentadas.\n\n## 1. Árbol de Selección en 3 Pasos\n\n```mermaid\nflowchart TD\n    Q1{\"¿Cuál es el resultado principal?\"}\n    Q1 -->|\"Exploración rápida / no-code\"| D1[\"Desktop GUI (Gephi, Cytoscape, Graphia)\"]\n    Q1 -->|\"Cálculo algorítmico y pipelines\"| D2{\"¿Lenguaje y Escala?\"}\n    Q1 -->|\"Interfaz web embebida\"| D3{\"¿Tecnología de Render?\"}\n    Q1 -->|\"Modelos avanzados (>2 entidades o tiempo)\"| D4[\"Temporal / Hipergrafo (Raphtory, XGI)\"]\n\n    D2 -->|\"Prototipado rápido / Redes pequeñas\"| P1[\"NetworkX (Python)\"]\n    D2 -->|\"Rendimiento mononodo / Gran escala\"| P2[\"igraph / NetworKit / graph-tool\"]\n    D2 -->|\"GPU / Masivo\"| P3[\"cuGraph / GraphScope\"]\n\n    D3 -->|\"Canvas / WebGL balanceado\"| W1[\"Sigma.js / Cytoscape.js\"]\n    D3 -->|\"Millones de nodos en navegador\"| W2[\"Cosmograph (WebGL puro)\"]\n    D3 -->|\"Diagramas de flujo / cajas y puertos\"| W3[\"xyflow / Graphviz\"]\n```\n\n---\n\n## 2. Preguntas Obligatorias de Selección\n\nAntes de adoptar cualquier herramienta o emitir una recomendación definitiva:\n\n1. **Definición de Entidad y Enlace:**\n   - ¿Qué es un nodo? ¿Qué cuenta exactamente como una arista legítima?\n   - Si se proyecta una red bipartita a monopartita, ¿se conservan los pesos y atributos originales?\n2. **Modelo Estructural:**\n   - ¿Hay marcas de tiempo continuas o eventos instantáneos? Si se agrega en snapshots estáticos, ¿se pierde causalidad o precedencia?\n   - ¿Las relaciones son por pares o colectivas (coautoría, hiperaristas)?\n3. **Escala Real vs Teórica:**\n   - ¿Cuántos nodos y aristas tiene el dataset en producción?\n   - ¿El cuello de botella es la memoria RAM, el algoritmo de centralidad o la tasa de refresco (FPS) del navegador?\n4. **Restricciones Duras y Seguridad:**\n   - ¿Los datos pueden residir en nubes públicas de terceros (SaaS) o deben permanecer *on-premise*?\n   - ¿Qué licencia de software se exige (MIT/Apache vs GPL/Comercial)?\n\n---\n\n## 3. Matriz Buy vs Build (Comprar vs Construir)\n\n| Criterio | Cuándo Construir (Build con Open Source) | Cuándo Comprar / Usar SaaS (Buy) |\n|---|---|---|\n| **Diferenciación de Negocio** | El algoritmo de grafo o el layout es la ventaja competitiva central del producto. | La visualización de redes es una funcionalidad secundaria o accesoria de monitoreo. |\n| **Gobernanza y Privacidad** | Datos altamente regulados (salud, banca, defensa) que no pueden salir de VPC local. | Datos públicos o sin restricciones de cumplimiento donde se valora la colaboración remota. |\n| **Capacidad del Equipo** | Ingenieros con experiencia en WebGL, grafos, shaders y matemáticas de optimización. | Equipo enfocado en el dominio de negocio que no puede costear el mantenimiento de un motor de render. |\n| **Costo Total (TCO)** | Soluciones consolidadas (`Sigma.js`, `NetworkX`) sin costes por asiento/servidor. | Plataformas comerciales (`Bloom`, `KeyLines`, `Linkurious`) si el tiempo a producción es crítico. |\n\n---\n\n## Páginas Relacionadas\n- [Guía Rápida y Enrutamiento](../quickstart.md)\n- [Evaluación y Benchmarking](evaluation-and-benchmarking.md)\n- [Taxonomía y Dimensiones](taxonomy-and-dimensions.md)\n",
+      "size": 3267,
+      "links": [
+        "quickstart",
+        "concepts/evaluation-and-benchmarking",
+        "concepts/taxonomy-and-dimensions"
+      ],
+      "backlinks": [
+        "catalog/desktop-and-gui",
+        "catalog/graph-databases-and-query",
+        "catalog/r-and-statistics",
+        "catalog/temporal-and-higher-order",
+        "concepts/evaluation-and-benchmarking",
+        "concepts/taxonomy-and-dimensions",
+        "governance/policies-and-contribution",
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "concepts/evaluation-and-benchmarking",
+      "title": "Metodología de Evaluación y Benchmarking",
+      "type": "concept",
+      "description": "Métricas formales para evaluar rendimiento, fidelidad topológica, latencia de renderizado y consumo de memoria.",
+      "tags": [
+        "evaluation",
+        "benchmarking",
+        "metrics",
+        "performance",
+        "memory"
+      ],
+      "body": "\n# Metodología de Evaluación y Benchmarking\n\nNunca debe tomarse una decisión basada únicamente en cifras comerciales de \"soporta millones de nodos\". El rendimiento debe medirse en 4 capas independientes:\n\n## 1. Las 4 Capas de Rendimiento\n\n1. **Ingestión y Construcción del Grafo:**\n   - Tiempo de parsing del archivo fuente (GraphML, CSV, JSON, Parquet).\n   - Memoria pico durante la asignación de estructuras de datos (listas de adyacencia vs matrices CSR).\n2. **Cómputo Algorítmico:**\n   - Tiempo de ejecución de algoritmos estándar (PageRank, Betweenness Centrality, Louvain/Leiden, Componentes Conexas).\n   - Escalabilidad con el número de hilos (multithreading en C++/OpenMP) o paralelismo en GPU.\n3. **Cálculo de Layout Espacial:**\n   - Convergencia del algoritmo de distribución espacial (ForceAtlas2, Fruchterman-Reingold, OpenOrd).\n   - Reducción de solapamiento de aristas (*edge crossings*) y conservación de distancias geodésicas.\n4. **Interacción y Renderizado:**\n   - Tasa de cuadros por segundo (FPS) sostenida durante pan, zoom y selección.\n   - Latencia de respuesta en eventos de hover y filtrado interactivo de subgrafos.\n\n---\n\n## 2. Protocolo de Prueba Mínima (PoC de 15 Minutos)\n\nPara evitar inversiones fallidas en herramientas inadecuadas:\n\n```\n[Dataset Sintético o Muestra Real] \n       │\n       ├──► 1. Medir memoria pico en reposo tras la carga\n       ├──► 2. Ejecutar cálculo del algoritmo crítico\n       ├──► 3. Medir FPS en navegación interactiva\n       └──► 4. Exportar a formato estándar y comprobar pérdidas\n```\n\n### Registro de Métricas Obligatorio\n- Nodos, aristas y densidad efectiva (\\(2|E| / (|V|(|V|-1))\\)).\n- Hardware empleado (CPU, núcleos, RAM instalada, modelo de GPU y VRAM).\n- Versión exacta del paquete o software.\n- Tiempos medidos con cronómetro reproducible (`time`, `cProfile`, devtools de navegador).\n\n---\n\n## Páginas Relacionadas\n- [Framework de Decisión](decision-framework.md)\n- [Formatos e Interoperabilidad](../catalog/formats-and-interoperability.md)\n- [Computación a Escala y GPU](../catalog/scale-gpu-distributed.md)\n",
+      "size": 2075,
+      "links": [
+        "concepts/decision-framework",
+        "catalog/formats-and-interoperability",
+        "catalog/scale-gpu-distributed"
+      ],
+      "backlinks": [
+        "catalog/datasets-and-benchmarks",
+        "catalog/scale-gpu-distributed",
+        "concepts/decision-framework",
+        "index"
+      ]
+    },
+    {
+      "id": "concepts/taxonomy-and-dimensions",
+      "title": "Taxonomía y Dimensiones de Clasificación",
+      "type": "concept",
+      "description": "Dimensiones ortogonales para categorizar recursos por modelo de red, categoría funcional, escala y entorno.",
+      "tags": [
+        "taxonomy",
+        "classification",
+        "network-types",
+        "scale-bands",
+        "environments"
+      ],
+      "body": "\n# Taxonomía y Dimensiones de Clasificación\n\nNetwork Atlas evita clasificar recursos únicamente por popularidad. Utiliza dimensiones ortogonales e independientes que permiten filtrar con precisión.\n\n## 1. Categorías Primarias\n\nDefinidas canónicamente en `repo://data/domain-taxonomy.json`:\n\n1. **`desktop_exploration` (Aplicaciones de exploración):** Herramientas GUI listas para instalar, importar datos y explorar interactivamente sin programar (ej. Gephi, Cytoscape, Graphia).\n2. **`web_hosted` (Productos web o alojados):** Plataformas SaaS e interfaces en navegador para colaborar y compartir grafos sin gestión de infraestructura local.\n3. **`python_analysis` (Análisis y herramientas Python):** Ecosistema de bibliotecas para modelar, manipular, calcular métricas y ejecutar algoritmos en Python (ej. NetworkX, igraph, NetworKit).\n4. **`web_visualization` (Bibliotecas de visualización web):** SDKs y bibliotecas JavaScript/TypeScript para incrustar redes interactivas en aplicaciones web (ej. Sigma.js, Cytoscape.js, Cosmograph).\n5. **`r_analysis` (Análisis y visualización en R):** Paquetes para investigación reproducible, bioestadística y modelos estocásticos (ej. igraph, tidygraph, ggraph).\n6. **`scale_distributed` (Computación a escala y distribuida):** Aceleración por GPU y frameworks distribuidos para redes masivas (ej. cuGraph, GraphScope).\n7. **`higher_order_temporal` (Temporal, multicapa y orden superior):** Modelos donde el tiempo, las capas interconectadas o las relaciones grupales (>2 entidades) son estructurales (ej. Raphtory, pathpy, XGI).\n8. **`research_layout_algorithms` (Investigación de layouts y dibujo de grafos):** Algoritmos y frameworks formales de force-directed layout, reducción dimensional y dibujo ortogonal.\n9. **`datasets_benchmarks` (Datasets y suites de prueba):** Colecciones públicas de redes reales y suites estandarizadas (ej. SNAP, OGB).\n10. **`graph_database_query` (Bases de datos y analítica de grafos):** Motores de persistencia de grafos de propiedades y RDF con soporte de lenguajes de consulta (Cypher, GQL, SPARQL).\n\n---\n\n## 2. Modelos de Red (`network_types`)\n\n- **`static`**: Red simple donde las aristas y nodos no cambian a lo largo del tiempo.\n- **`directed` / `undirected`**: Aristas con o sin orientación de origen a destino.\n- **`weighted`**: Relaciones con valores cuantitativos (fuerza, capacidad, distancia).\n- **`bipartite` / `multipartite`**: Nodos divididos en dos o más conjuntos disjuntos donde sólo existen aristas entre conjuntos diferentes.\n- **`multilayer`**: Redes compuestas por múltiples capas que representan diferentes tipos de interacciones sobre los mismos o distintos conjuntos de nodos.\n- **`temporal`**: Redes con marcas de tiempo (marcas temporales discretas o continuas / streams de eventos).\n- **`hypergraph`**: Estructuras donde una hiperarista puede conectar simultáneamente un número arbitrario de nodos.\n\n---\n\n## 3. Bandas de Escala (`scale_band`)\n\n- **`small_in_memory`**: Hasta ~100.000 nodos/aristas. Ejecutable cómodamente en memoria en cualquier laptop común.\n- **`medium_single_node`**: Desde 100.000 hasta ~5.000.000 aristas. Requiere bibliotecas optimizadas en C/C++ o Rust con bindings a Python/R.\n- **`large_gpu_or_disk`**: Desde 5.000.000 hasta ~100.000.000 aristas. Requiere GPU con VRAM dedicada o motores de grafo orientados a memoria mapeada / disco.\n- **`scale_distributed`**: Más de 100.000.000 aristas. Requiere clúster distribuido (Spark, GraphScope, ray).\n\n---\n\n## 4. Entornos de Ejecución (`environments`)\n\n- `desktop_gui`: Software con interfaz gráfica de escritorio.\n- `web`: Navegador cliente (HTML5 Canvas, WebGL, SVG).\n- `python`: Intérprete Python y Jupyter Notebooks.\n- `r`: Entorno R y RStudio.\n- `cli`: Herramientas de línea de comandos.\n- `gpu`: Aceleradores NVIDIA CUDA.\n- `c_cpp`: Código compilado nativo de alto rendimiento.\n\n---\n\n## Páginas Relacionadas\n- [Arquitectura y Modelo de Datos](architecture-and-data-model.md)\n- [Framework de Decisión](decision-framework.md)\n- [Índice Maestro OpenWiki](../index.md)\n",
+      "size": 4046,
+      "links": [
+        "concepts/architecture-and-data-model",
+        "concepts/decision-framework",
+        "index"
+      ],
+      "backlinks": [
+        "catalog/python-analysis",
+        "catalog/temporal-and-higher-order",
+        "concepts/architecture-and-data-model",
+        "concepts/decision-framework",
+        "index",
+        "quickstart"
+      ]
+    },
+    {
+      "id": "governance/policies-and-contribution",
+      "title": "Gobernanza, Políticas y Directrices de Contribución",
+      "type": "governance",
+      "description": "Criterios para proponer adiciones al catálogo, fichas de recursos y experimentos, y política de licencias.",
+      "tags": [
+        "governance",
+        "contributing",
+        "policies",
+        "license",
+        "resource-card"
+      ],
+      "body": "\n# Gobernanza, Políticas y Directrices de Contribución\n\nNetwork Atlas mantiene estándares rigurosos de curación para evitar que el catálogo se convierta en una lista inflada o desactualizada de enlaces.\n\n## 1. Criterios para Incluir un Nuevo Recurso\n\nPara que una biblioteca, herramienta o dataset sea aceptado en `data/resources.json`:\n\n1. **Evidencia de Utilidad Real:** Debe resolver un problema técnico específico dentro del alcance (ciencia de redes, análisis de grafos, visualización interactiva, bibliometría, orden superior o bases de datos).\n2. **Fuente Primaria Verificable:** Debe aportarse el enlace a la documentación oficial y al código fuente (GitHub/GitLab) o sitio web oficial. No se admiten enlaces acortados (`bit.ly`, `lnkd.in`) ni intermediarios no oficiales.\n3. **Mantenimiento y Licencia:** Debe especificarse una licencia de software conocida (MIT, Apache-2.0, GPL, Propietaria con términos) y demostrarse actividad reciente o estabilidad probada.\n4. **Cumplimiento del Esquema:** Todo nuevo recurso debe incluirse en `data/resources.json` y pasar `python scripts/validate_registry.py` sin errores.\n\n---\n\n## 2. Plantillas de Contribución\n\nEl repositorio incluye plantillas estandarizadas en `templates/`:\n- **`templates/RESOURCE_CARD.md`**: Ficha detallada de un recurso, documentando modelo de datos, entorno, casos de uso óptimos, límites conocidos y prueba de 15 minutos.\n- **`templates/EXPERIMENT_CARD.md`**: Ficha de validación empírica para registrar benchmarks de rendimiento (nodos, aristas, memoria pico, FPS, tiempo de cálculo).\n\n---\n\n## 3. Política de Licenciamiento\n\n- **Scripts y Código Auxiliar (`scripts/`):** Diseñados para licenciamiento permisivo (ej. MIT o Apache-2.0).\n- **Documentación y Wiki (`openwiki/`):** Curación y guías estructuradas bajo licenciamiento abierto (Creative Commons CC BY 4.0).\n- **Recursos Externos:** Los enlaces a terceros pertenecen a sus respectivos autores; el repositorio no sublicencia ni garantiza software de terceros.\n\n---\n\n## Páginas Relacionadas\n- [Arquitectura y Modelo de Datos](../concepts/architecture-and-data-model.md)\n- [Framework de Decisión](../concepts/decision-framework.md)\n- [Índice Maestro OpenWiki](../index.md)\n",
+      "size": 2206,
+      "links": [
+        "concepts/architecture-and-data-model",
+        "concepts/decision-framework",
+        "index"
+      ],
+      "backlinks": [
+        "index"
+      ]
+    },
+    {
+      "id": "index",
+      "title": "Network Atlas - OpenWiki Knowledge Base",
+      "type": "index",
+      "description": "Índice maestro y fuente de verdad unificada de Network Atlas bajo el estándar Open Knowledge Format (OKF v0.2).",
+      "tags": [
+        "index",
+        "openwiki",
+        "network-atlas",
+        "navigation",
+        "graph-analytics"
+      ],
+      "body": "\n# Network Atlas - OpenWiki Knowledge Base\n\nBienvenido a la fuente de verdad estructurada de **Network Atlas**. Esta base de conocimiento documenta las herramientas, bibliotecas, datasets, formatos y metodologías para el estudio y visualización de redes complejas.\n\n```mermaid\ngraph TD\n    A[\"Network Atlas (OpenWiki)\"] --> B[\"Conceptos y Metodología\"]\n    A --> C[\"Catálogo de Recursos (97+)\"]\n    A --> D[\"Herramientas CLI y Esquemas\"]\n    A --> E[\"Gobernanza y Políticas\"]\n\n    B --> B1[\"Arquitectura y Datos\"]\n    B --> B2[\"Taxonomía y Dimensiones\"]\n    B --> B3[\"Framework de Decisión\"]\n    B --> B4[\"Evaluación y Benchmarking\"]\n\n    C --> C1[\"Exploración GUI / Desktop\"]\n    C --> C2[\"Visualización Web\"]\n    C --> C3[\"Análisis en Python\"]\n    C --> C4[\"Análisis en R y Estadística\"]\n    C --> C5[\"Escala, GPU y Distribuido\"]\n    C --> C6[\"Temporal y Orden Superior\"]\n    C --> C7[\"Bases de Datos de Grafos\"]\n    C --> C8[\"Datasets y Benchmarks\"]\n    C --> C9[\"Formatos e Interoperabilidad\"]\n\n    D --> D1[\"CLI scripts/find_resources.py\"]\n    D --> D2[\"resource.schema.json\"]\n    D --> D3[\"Protocolo de Routing\"]\n\n    E --> E1[\"Políticas de Licencias\"]\n    E --> E2[\"Guía de Contribución\"]\n```\n\n---\n\n## 1. Entrada Rápida\n- [Guía Rápida y Enrutamiento (Quickstart)](quickstart.md) - Resuelva dudas en 30 segundos con tablas de atajos.\n- [Registro de Cambios del Wiki (Logs)](logs.md) - Historial de actualizaciones y versiones.\n\n---\n\n## 2. Conceptos Fundamentales\n- [Arquitectura y Modelo de Datos](concepts/architecture-and-data-model.md): Esquema formal, validadores, `resources.json` y `resources.csv`.\n- [Taxonomía y Dimensiones](concepts/taxonomy-and-dimensions.md): Categorías primarias, modelos de grafos (estáticos, temporales, hipergrafos), entornos y bandas de escala.\n- [Framework de Decisión y Criterios](concepts/decision-framework.md): Árbol de decisiones, matriz de *Build vs Buy*, y preguntas de selección obligatorias.\n- [Evaluación y Benchmarking](concepts/evaluation-and-benchmarking.md): Metodología rigurosa para evaluar memoria pico, latencia, rendering y fidelidad topológica.\n\n---\n\n## 3. Catálogo Especializado por Dominio\n- [Exploración Desktop y GUIs](catalog/desktop-and-gui.md): Gephi, Cytoscape, Graphia, Tulip, VOSviewer.\n- [Bibliotecas de Visualización Web](catalog/web-visualization.md): Sigma.js, Cytoscape.js, Cosmograph, G6, Force Graph, xyflow.\n- [Análisis de Redes en Python](catalog/python-analysis.md): NetworkX, igraph, NetworKit, graph-tool, SNAP.\n- [Análisis y Estadística en R](catalog/r-and-statistics.md): igraph (R), tidygraph, ggraph, statnet, ndtv.\n- [Computación a Escala, GPU y Distribuida](catalog/scale-gpu-distributed.md): RAPIDS cuGraph, GraphScope, DGL, PyG.\n- [Redes Temporales y de Orden Superior](catalog/temporal-and-higher-order.md): Raphtory, pathpy, XGI, HyperNetX.\n- [Bases de Datos de Grafos y Consultas](catalog/graph-databases-and-query.md): Neo4j, Memgraph, Kùzu, Apache AGE.\n- [Datasets, Benchmarks y Repositorios](catalog/datasets-and-benchmarks.md): SNAP, OGB, Network Repository, OpenAlex.\n- [Formatos e Interoperabilidad](catalog/formats-and-interoperability.md): GraphML, GEXF, JSON-Graph, CSV/TSV, Parquet.\n\n---\n\n## 4. Herramientas y Automatización\n- [Herramientas CLI y Scripts de Consulta](tools/cli-and-automation.md): Uso del buscador rápido, filtrado y validación de esquema.\n- [Protocolo de Enrutamiento para Agentes (`RESOURCE_ROUTING.md`)](../agents/RESOURCE_ROUTING.md): Guía de inferencia y consultas para agentes LLM.\n- [Esquema JSON Canónico (`resource.schema.json`)](../agents/resource.schema.json): Validación estricta para ingestión de recursos.\n\n---\n\n## 5. Gobernanza y Contribución\n- [Políticas de Contribución y Gobernanza](governance/policies-and-contribution.md): Flujo de PRs, verificación de enlaces, criterios de inclusión y directrices de licencias.\n",
+      "size": 3853,
+      "links": [
+        "quickstart",
+        "logs",
+        "concepts/architecture-and-data-model",
+        "concepts/taxonomy-and-dimensions",
+        "concepts/decision-framework",
+        "concepts/evaluation-and-benchmarking",
+        "catalog/desktop-and-gui",
+        "catalog/web-visualization",
+        "catalog/python-analysis",
+        "catalog/r-and-statistics",
+        "catalog/scale-gpu-distributed",
+        "catalog/temporal-and-higher-order",
+        "catalog/graph-databases-and-query",
+        "catalog/datasets-and-benchmarks",
+        "catalog/formats-and-interoperability",
+        "tools/cli-and-automation",
+        "governance/policies-and-contribution"
+      ],
+      "backlinks": [
+        "concepts/architecture-and-data-model",
+        "concepts/taxonomy-and-dimensions",
+        "governance/policies-and-contribution",
+        "quickstart",
+        "tools/cli-and-automation"
+      ]
+    },
+    {
+      "id": "logs",
+      "title": "Registro de Actualizaciones del Wiki (OpenWiki Logs)",
+      "type": "log",
+      "description": "Registro cronológico de sincronizaciones, adiciones y mantenimiento de la base de conocimiento OpenWiki.",
+      "tags": [
+        "changelog",
+        "logs",
+        "openwiki",
+        "synchronization"
+      ],
+      "body": "\n# Registro de Actualizaciones de OpenWiki\n\n## [2026-10-18] Inicialización de OpenWiki v0.2 (OKF Standard)\n- **Operación:** Instalación de OpenWiki y estructuración integral de la base de conocimiento del repositorio.\n- **Cambios realizados:**\n  - Configuración del paquete global `openwiki` y conectores CLI para agentes (`Claude Code`, `Cursor`, `Codex`).\n  - Creación de `.openwikiignore` para fijar límites estrictos de lectura y proteger secretos y datos crudos.\n  - Creación de bloques administrados en `AGENTS.md` y `CLAUDE.md`.\n  - Configuración de flujo automatizado en `.github/workflows/openwiki-update.yml`.\n  - Normalización de 97 recursos existentes bajo especificación OKF (Open Knowledge Format v0.2).\n  - Creación de páginas de conceptos, catálogo especializado por dominios, guías de decisión y documentación de herramientas CLI.\n- **Estado de verificación:** 97 recursos validados contra `agents/resource.schema.json`.\n",
+      "size": 938,
+      "links": [],
+      "backlinks": [
+        "index"
+      ]
+    },
+    {
+      "id": "quickstart",
+      "title": "Guía Rápida y Enrutamiento de Tareas (Quickstart)",
+      "type": "guide",
+      "description": "Punto de entrada rápido para que agentes y humanos resuelvan dudas sobre herramientas de redes en menos de 30 segundos.",
+      "tags": [
+        "quickstart",
+        "routing",
+        "agents",
+        "network-analysis",
+        "decision-matrix"
+      ],
+      "body": "\n# Guía Rápida y Enrutamiento de Tareas\n\nEsta guía permite a un agente o desarrollador pasar de un requerimiento a una recomendación justificada en segundos.\n\n## 1. Atajos de Decisión en 30 Segundos\n\n| Necesidad Primaria | Primera Opción | Alternativa Avanzada | Cuándo Descartar |\n|---|---|---|---|\n| **Exploración No-Code / GUI** | [Gephi](catalog/desktop-and-gui.md) | [Graphia](catalog/desktop-and-gui.md) / [Cytoscape](catalog/desktop-and-gui.md) | Datos mayores a memoria RAM o necesidad de automatización vía pipeline CI/CD. |\n| **Análisis Estructural en Python** | [NetworkX](catalog/python-analysis.md) | [igraph](catalog/python-analysis.md) / [NetworKit](catalog/python-analysis.md) / [graph-tool](catalog/python-analysis.md) | Redes de >1M aristas con cálculos intensivos (centralidad de intermediación, etc.). |\n| **Componente Visual en Web/Frontend** | [Sigma.js](catalog/web-visualization.md) | [Cytoscape.js](catalog/web-visualization.md) / [Cosmograph](catalog/web-visualization.md) | Redes que requieren layouts dinámicos en tiempo real con millones de nodos (usar WebGL/Cosmograph). |\n| **Diagramación y Flujos** | [Graphviz](catalog/web-visualization.md) | [xyflow](catalog/web-visualization.md) | Redes densas sin orden jerárquico claro. |\n| **Redes Temporales y Dinámicas** | [Raphtory](catalog/temporal-and-higher-order.md) | [pathpy](catalog/temporal-and-higher-order.md) / `ndtv` (R) | Cuando los datos no tienen marcas temporales ordenadas o sólo son agregaciones estáticas. |\n| **Hipergrafos / Orden Superior (>2 entidades)** | [XGI](catalog/temporal-and-higher-order.md) | [HyperNetX](catalog/temporal-and-higher-order.md) | Cuando las relaciones son exclusivamente pares simples nodo-a-nodo. |\n| **Cómputo a Escala / Aceleración GPU** | [cuGraph](catalog/scale-gpu-distributed.md) | [GraphScope](catalog/scale-gpu-distributed.md) | Cuando no se dispone de GPUs NVIDIA con memoria VRAM suficiente o los datos caben en CPU común. |\n| **Base de Datos y Analítica de Grafos** | [Neo4j](catalog/graph-databases-and-query.md) | [Memgraph](catalog/graph-databases-and-query.md) / [Kùzu](catalog/graph-databases-and-query.md) | Necesidades analíticas puras sin persistencia transaccional ACID. |\n| **Mapas Bibliométricos y de Literatura** | [VOSviewer](catalog/desktop-and-gui.md) | [Gephi](catalog/desktop-and-gui.md) + [OpenAlex](catalog/datasets-and-benchmarks.md) | Si la literatura no cuenta con identificadores DOI o citas normalizadas. |\n\n---\n\n## 2. Consulta Rápida por Terminal (Zero Latency)\n\nEl repositorio incluye un motor de búsqueda autónomo sin dependencias (`scripts/find_resources.py`):\n\n```bash\n# 1. Buscar herramientas web\npython scripts/find_resources.py --category web_visualization\n\n# 2. Filtrar por tipo de red (ej. hipergrafos) y volcar a JSON\npython scripts/find_resources.py --network-type hypergraph --json\n\n# 3. Buscar por texto libre\npython scripts/find_resources.py --text \"layout\"\n```\n\n---\n\n## 3. Formato Canónico de Recomendación para Agentes\n\nAl responder a un usuario humano, todo agente debe seguir este formato estructurado:\n1. **Herramienta recomendada:** Nombre y enlace primario.\n2. **Por qué encaja:** Ajuste al modelo de datos, entorno y volumen.\n3. **Qué NO resuelve:** Límites claros (memoria, formatos no soportados, curva de aprendizaje).\n4. **Prueba de 15 minutos:** Comando, dataset de juguete o snippet para validar compatibilidad.\n\n---\n\n## Páginas Relacionadas\n- [Índice Maestro OpenWiki](index.md)\n- [Framework de Decisión y Criterios](concepts/decision-framework.md)\n- [Taxonomía y Dimensiones](concepts/taxonomy-and-dimensions.md)\n- [Arquitectura y Modelo de Datos](concepts/architecture-and-data-model.md)\n",
+      "size": 3678,
+      "links": [
+        "catalog/desktop-and-gui",
+        "catalog/python-analysis",
+        "catalog/web-visualization",
+        "catalog/temporal-and-higher-order",
+        "catalog/scale-gpu-distributed",
+        "catalog/graph-databases-and-query",
+        "catalog/datasets-and-benchmarks",
+        "index",
+        "concepts/decision-framework",
+        "concepts/taxonomy-and-dimensions",
+        "concepts/architecture-and-data-model"
+      ],
+      "backlinks": [
+        "concepts/decision-framework",
+        "index",
+        "tools/cli-and-automation"
+      ]
+    },
+    {
+      "id": "tools/cli-and-automation",
+      "title": "Herramientas CLI y Scripts de Automatización",
+      "type": "tool",
+      "description": "Manual operativo de los scripts de búsqueda, validación de integridad y comandos del CLI de OpenWiki.",
+      "tags": [
+        "cli",
+        "scripts",
+        "find-resources",
+        "validate-registry",
+        "openwiki-cli"
+      ],
+      "body": "\n# Herramientas CLI y Scripts de Automatización\n\nEste repositorio incluye herramientas autónomas en Python y Node.js para que tanto agentes como humanos interactúen con el catálogo sin overhead de dependencias externas.\n\n## 1. Buscador Rápido de Recursos (`scripts/find_resources.py`)\n\nScript escrito en Python estándar (sin requerir paquetes externos) para filtrar el catálogo canónico (`data/resources.json`):\n\n```bash\n# Mostrar ayuda con todos los parámetros disponibles:\npython scripts/find_resources.py --help\n\n# 1. Filtrar por categoría primaria:\npython scripts/find_resources.py --category web_visualization\n\n# 2. Filtrar por modelo de red:\npython scripts/find_resources.py --network-type hypergraph\n\n# 3. Filtrar por entorno de ejecución:\npython scripts/find_resources.py --environment python\n\n# 4. Búsqueda por texto libre en nombre y descripción:\npython scripts/find_resources.py --text \"community detection\"\n\n# 5. Salida en formato JSON limpio (para agentes o scripts):\npython scripts/find_resources.py --category desktop_exploration --json\n```\n\n---\n\n## 2. Validador de Integridad del Catálogo (`scripts/validate_registry.py`)\n\nVerifica que el archivo `data/resources.json` cumpla las restricciones del esquema:\n- Valida la unicidad de identificadores (`id`).\n- Valida que todos los recursos posean campos requeridos (`id`, `name`, `primary_category`, `network_types`, `scale_band`, `environments`, `description`, `primary_url`, `verification_status`).\n- Verifica que `primary_category` pertenezca al vocabulario controlado de `data/domain-taxonomy.json`.\n- Detecta recursos con enlaces pendientes (`needs_link_resolution`).\n\n```bash\npython scripts/validate_registry.py\n```\n\n---\n\n## 3. Comandos del CLI de OpenWiki\n\nAl tener `openwiki` instalado en el entorno:\n\n- **Visualizador Web Interactivo:**\n  Inicia un servidor local con grafo de nodos y lector interactivo de la base de conocimiento:\n  ```bash\n  openwiki visualize openwiki --port 4321\n  ```\n- **Exportación estática para hosting web:**\n  ```bash\n  openwiki visualize openwiki --export docs/openwiki-visualizer --no-open\n  ```\n- **Actualización incremental basada en Git Diffs:**\n  ```bash\n  openwiki code --update --print\n  ```\n\n---\n\n## Páginas Relacionadas\n- [Arquitectura y Modelo de Datos](../concepts/architecture-and-data-model.md)\n- [Guía Rápida y Enrutamiento](../quickstart.md)\n- [Índice Maestro OpenWiki](../index.md)\n",
+      "size": 2398,
+      "links": [
+        "concepts/architecture-and-data-model",
+        "quickstart",
+        "index"
+      ],
+      "backlinks": [
+        "concepts/architecture-and-data-model",
+        "index"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "catalog/datasets-and-benchmarks",
+      "target": "concepts/evaluation-and-benchmarking"
+    },
+    {
+      "source": "catalog/datasets-and-benchmarks",
+      "target": "catalog/python-analysis"
+    },
+    {
+      "source": "catalog/datasets-and-benchmarks",
+      "target": "catalog/formats-and-interoperability"
+    },
+    {
+      "source": "catalog/desktop-and-gui",
+      "target": "catalog/web-visualization"
+    },
+    {
+      "source": "catalog/desktop-and-gui",
+      "target": "catalog/python-analysis"
+    },
+    {
+      "source": "catalog/desktop-and-gui",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "catalog/formats-and-interoperability",
+      "target": "catalog/desktop-and-gui"
+    },
+    {
+      "source": "catalog/formats-and-interoperability",
+      "target": "catalog/web-visualization"
+    },
+    {
+      "source": "catalog/formats-and-interoperability",
+      "target": "concepts/architecture-and-data-model"
+    },
+    {
+      "source": "catalog/graph-databases-and-query",
+      "target": "catalog/scale-gpu-distributed"
+    },
+    {
+      "source": "catalog/graph-databases-and-query",
+      "target": "catalog/formats-and-interoperability"
+    },
+    {
+      "source": "catalog/graph-databases-and-query",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "catalog/python-analysis",
+      "target": "catalog/r-and-statistics"
+    },
+    {
+      "source": "catalog/python-analysis",
+      "target": "catalog/scale-gpu-distributed"
+    },
+    {
+      "source": "catalog/python-analysis",
+      "target": "concepts/taxonomy-and-dimensions"
+    },
+    {
+      "source": "catalog/r-and-statistics",
+      "target": "catalog/python-analysis"
+    },
+    {
+      "source": "catalog/r-and-statistics",
+      "target": "catalog/temporal-and-higher-order"
+    },
+    {
+      "source": "catalog/r-and-statistics",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "catalog/scale-gpu-distributed",
+      "target": "catalog/python-analysis"
+    },
+    {
+      "source": "catalog/scale-gpu-distributed",
+      "target": "concepts/evaluation-and-benchmarking"
+    },
+    {
+      "source": "catalog/scale-gpu-distributed",
+      "target": "catalog/graph-databases-and-query"
+    },
+    {
+      "source": "catalog/temporal-and-higher-order",
+      "target": "concepts/taxonomy-and-dimensions"
+    },
+    {
+      "source": "catalog/temporal-and-higher-order",
+      "target": "catalog/python-analysis"
+    },
+    {
+      "source": "catalog/temporal-and-higher-order",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "catalog/web-visualization",
+      "target": "catalog/desktop-and-gui"
+    },
+    {
+      "source": "catalog/web-visualization",
+      "target": "catalog/python-analysis"
+    },
+    {
+      "source": "catalog/web-visualization",
+      "target": "concepts/architecture-and-data-model"
+    },
+    {
+      "source": "concepts/architecture-and-data-model",
+      "target": "concepts/taxonomy-and-dimensions"
+    },
+    {
+      "source": "concepts/architecture-and-data-model",
+      "target": "tools/cli-and-automation"
+    },
+    {
+      "source": "concepts/architecture-and-data-model",
+      "target": "index"
+    },
+    {
+      "source": "concepts/decision-framework",
+      "target": "quickstart"
+    },
+    {
+      "source": "concepts/decision-framework",
+      "target": "concepts/evaluation-and-benchmarking"
+    },
+    {
+      "source": "concepts/decision-framework",
+      "target": "concepts/taxonomy-and-dimensions"
+    },
+    {
+      "source": "concepts/evaluation-and-benchmarking",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "concepts/evaluation-and-benchmarking",
+      "target": "catalog/formats-and-interoperability"
+    },
+    {
+      "source": "concepts/evaluation-and-benchmarking",
+      "target": "catalog/scale-gpu-distributed"
+    },
+    {
+      "source": "concepts/taxonomy-and-dimensions",
+      "target": "concepts/architecture-and-data-model"
+    },
+    {
+      "source": "concepts/taxonomy-and-dimensions",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "concepts/taxonomy-and-dimensions",
+      "target": "index"
+    },
+    {
+      "source": "governance/policies-and-contribution",
+      "target": "concepts/architecture-and-data-model"
+    },
+    {
+      "source": "governance/policies-and-contribution",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "governance/policies-and-contribution",
+      "target": "index"
+    },
+    {
+      "source": "index",
+      "target": "quickstart"
+    },
+    {
+      "source": "index",
+      "target": "logs"
+    },
+    {
+      "source": "index",
+      "target": "concepts/architecture-and-data-model"
+    },
+    {
+      "source": "index",
+      "target": "concepts/taxonomy-and-dimensions"
+    },
+    {
+      "source": "index",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "index",
+      "target": "concepts/evaluation-and-benchmarking"
+    },
+    {
+      "source": "index",
+      "target": "catalog/desktop-and-gui"
+    },
+    {
+      "source": "index",
+      "target": "catalog/web-visualization"
+    },
+    {
+      "source": "index",
+      "target": "catalog/python-analysis"
+    },
+    {
+      "source": "index",
+      "target": "catalog/r-and-statistics"
+    },
+    {
+      "source": "index",
+      "target": "catalog/scale-gpu-distributed"
+    },
+    {
+      "source": "index",
+      "target": "catalog/temporal-and-higher-order"
+    },
+    {
+      "source": "index",
+      "target": "catalog/graph-databases-and-query"
+    },
+    {
+      "source": "index",
+      "target": "catalog/datasets-and-benchmarks"
+    },
+    {
+      "source": "index",
+      "target": "catalog/formats-and-interoperability"
+    },
+    {
+      "source": "index",
+      "target": "tools/cli-and-automation"
+    },
+    {
+      "source": "index",
+      "target": "governance/policies-and-contribution"
+    },
+    {
+      "source": "quickstart",
+      "target": "catalog/desktop-and-gui"
+    },
+    {
+      "source": "quickstart",
+      "target": "catalog/python-analysis"
+    },
+    {
+      "source": "quickstart",
+      "target": "catalog/web-visualization"
+    },
+    {
+      "source": "quickstart",
+      "target": "catalog/temporal-and-higher-order"
+    },
+    {
+      "source": "quickstart",
+      "target": "catalog/scale-gpu-distributed"
+    },
+    {
+      "source": "quickstart",
+      "target": "catalog/graph-databases-and-query"
+    },
+    {
+      "source": "quickstart",
+      "target": "catalog/datasets-and-benchmarks"
+    },
+    {
+      "source": "quickstart",
+      "target": "index"
+    },
+    {
+      "source": "quickstart",
+      "target": "concepts/decision-framework"
+    },
+    {
+      "source": "quickstart",
+      "target": "concepts/taxonomy-and-dimensions"
+    },
+    {
+      "source": "quickstart",
+      "target": "concepts/architecture-and-data-model"
+    },
+    {
+      "source": "tools/cli-and-automation",
+      "target": "concepts/architecture-and-data-model"
+    },
+    {
+      "source": "tools/cli-and-automation",
+      "target": "quickstart"
+    },
+    {
+      "source": "tools/cli-and-automation",
+      "target": "index"
+    }
+  ]
+}
