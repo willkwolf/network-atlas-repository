@@ -1,0 +1,23 @@
+# Entornos y secretos
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Datos locales y experimentos privados: no subir a un repositorio público sin revisar
+private/
+local-data/
+raw-data/
+experiments/private/
+notes/private/
+*.parquet
+*.feather
+*.sqlite
+*.db
+
+# Build outputs
+.DS_Store
+Thumbs.db

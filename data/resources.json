@@ -1,0 +1,2070 @@
+[
+  {
+    "id": "network-py-course",
+    "name": "Learn Network in Python — The New Science of Maps",
+    "url": "https://www.thenewscienceofmaps.com/courses/network-py",
+    "primary_category": "learning_research",
+    "role": "Curso/recurso formativo para aprender análisis de redes en Python.",
+    "interfaces": [
+      "web",
+      "course"
+    ],
+    "network_types": [
+      "network_science",
+      "python",
+      "learning"
+    ],
+    "scale_profile": "not_applicable",
+    "maturity": "educational_resource",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Verificar currículo, accesibilidad y condiciones de acceso antes de recomendarlo para un objetivo de aprendizaje concreto."
+  },
+  {
+    "id": "gephi",
+    "name": "Gephi",
+    "url": "https://gephi.org/",
+    "primary_category": "desktop_exploration",
+    "role": "Exploración visual interactiva, layouts y análisis exploratorio de redes.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "general",
+      "social",
+      "citation",
+      "infrastructure"
+    ],
+    "scale_profile": "small_to_large_with_layout_limits",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Buen punto de partida para explorar redes y producir vistas; el rendimiento depende del tamaño, el layout y el equipo."
+  },
+  {
+    "id": "cytoscape-desktop",
+    "name": "Cytoscape",
+    "url": "https://cytoscape.org/",
+    "primary_category": "desktop_exploration",
+    "role": "Análisis y visualización de redes con un ecosistema de apps, especialmente útil en biología.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "biological",
+      "molecular",
+      "semantic",
+      "general"
+    ],
+    "scale_profile": "small_to_large_with_task_specific_limits",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Su orientación biológica es fuerte; también sirve para redes generales."
+  },
+  {
+    "id": "graphia",
+    "name": "Graphia",
+    "url": "https://graphia.app/",
+    "primary_category": "desktop_exploration",
+    "role": "Visualización y exploración interactiva de redes complejas y datos científicos.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "biological",
+      "scientific",
+      "attributed"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Evaluar formatos admitidos y límites de memoria con el dataset real."
+  },
+  {
+    "id": "tulip",
+    "name": "Tulip",
+    "url": "https://tulip.labri.fr/",
+    "primary_category": "desktop_exploration",
+    "role": "Entorno extensible para visualización, análisis y desarrollo de herramientas sobre grafos.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "general",
+      "scientific",
+      "attributed"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Adecuado cuando importan extensibilidad y algoritmos, no solo una vista rápida."
+  },
+  {
+    "id": "nodexl",
+    "name": "NodeXL",
+    "url": "https://nodexl.com/",
+    "primary_category": "desktop_exploration",
+    "role": "Análisis de redes sociales integrado con hojas de cálculo y flujos de trabajo de Office.",
+    "interfaces": [
+      "desktop_addin"
+    ],
+    "network_types": [
+      "social",
+      "organizational",
+      "communication"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "established",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Verificar compatibilidad, edición y modelo de licencia actuales antes de adoptarlo."
+  },
+  {
+    "id": "socnetv",
+    "name": "SocNetV",
+    "url": "https://socnetv.org/",
+    "primary_category": "desktop_exploration",
+    "role": "Herramienta de análisis de redes sociales con visualización y métricas de red.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "social",
+      "organizational",
+      "general"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Útil para análisis social de escritorio sin construir un pipeline de código."
+  },
+  {
+    "id": "ucinet",
+    "name": "UCINET",
+    "url": "https://sites.google.com/site/ucinetsoftware/",
+    "primary_category": "desktop_exploration",
+    "role": "Paquete clásico de análisis de redes sociales.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "social",
+      "organizational"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "established",
+    "cost_model": "commercial",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "La URL del proyecto puede cambiar; confirmar licencia, versión y sistema operativo."
+  },
+  {
+    "id": "vosviewer",
+    "name": "VOSviewer",
+    "url": "https://www.vosviewer.com/",
+    "primary_category": "desktop_exploration",
+    "role": "Mapas bibliométricos y de coautoría, cocitación, coocurrencia y acoplamiento bibliográfico.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "citation",
+      "bibliometric",
+      "scientific"
+    ],
+    "scale_profile": "medium_to_large_for_bibliometrics",
+    "maturity": "established",
+    "cost_model": "freeware_verify_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Es una opción especializada para mapas de ciencia, no un analizador universal de grafos."
+  },
+  {
+    "id": "orange",
+    "name": "Orange Data Mining",
+    "url": "https://orangedatamining.com/",
+    "primary_category": "desktop_exploration",
+    "role": "Flujos visuales de ciencia de datos; puede ampliarse con add-ons relevantes para redes.",
+    "interfaces": [
+      "desktop_visual_workflow"
+    ],
+    "network_types": [
+      "general",
+      "attributed"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Confirmar cuál add-on cubre el análisis de red requerido; el núcleo no sustituye una librería especializada."
+  },
+  {
+    "id": "semspect",
+    "name": "SemSpect",
+    "url": "https://www.semspect.de/",
+    "primary_category": "desktop_exploration",
+    "role": "Exploración visual de datos semánticos y grafos de conocimiento.",
+    "interfaces": [
+      "desktop_or_hosted_verify"
+    ],
+    "network_types": [
+      "knowledge_graph",
+      "semantic"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "commercial_or_specialized",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Verificar edición, disponibilidad y condiciones actuales."
+  },
+  {
+    "id": "pajek",
+    "name": "Pajek",
+    "url": "http://mrvar.fdv.uni-lj.si/pajek/",
+    "primary_category": "desktop_exploration",
+    "role": "Análisis y visualización de redes grandes, con uso histórico en ciencia de redes.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "social",
+      "citation",
+      "general"
+    ],
+    "scale_profile": "large_for_supported_workflows",
+    "maturity": "established",
+    "cost_model": "freeware_verify_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Interfaz y ecosistema distintos a herramientas web modernas; revisar formatos y exportación."
+  },
+  {
+    "id": "yed",
+    "name": "yEd Graph Editor",
+    "url": "https://www.yworks.com/products/yed",
+    "primary_category": "desktop_exploration",
+    "role": "Edición de diagramas y layouts de grafos para diagramación estructurada.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "dependency",
+      "organizational",
+      "process",
+      "general"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "established",
+    "cost_model": "freeware_verify_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Más adecuado para diagramas/representación controlada que para inferencia estadística de redes."
+  },
+  {
+    "id": "graphviz",
+    "name": "Graphviz",
+    "url": "https://graphviz.org/",
+    "primary_category": "desktop_exploration",
+    "role": "Renderizado reproducible de grafos mediante el lenguaje DOT y layouts automáticos.",
+    "interfaces": [
+      "cli",
+      "library"
+    ],
+    "network_types": [
+      "dependency",
+      "directed",
+      "hierarchical",
+      "general"
+    ],
+    "scale_profile": "small_to_large_for_static_rendering",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Fuerte para diagramas reproducibles; no es una plataforma de exploración analítica interactiva."
+  },
+  {
+    "id": "gephi-lite",
+    "name": "Gephi Lite",
+    "url": "https://gephi.org/gephi-lite/",
+    "primary_category": "web_hosted",
+    "role": "Exploración de redes desde el navegador con una experiencia ligera vinculada al ecosistema Gephi.",
+    "interfaces": [
+      "browser"
+    ],
+    "network_types": [
+      "general",
+      "social",
+      "citation"
+    ],
+    "scale_profile": "small_to_medium_verify_browser_limits",
+    "maturity": "established",
+    "cost_model": "free_open_source_verify",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Confirmar límites de importación, persistencia y colaboración en navegador."
+  },
+  {
+    "id": "kumu",
+    "name": "Kumu",
+    "url": "https://kumu.io/",
+    "primary_category": "web_hosted",
+    "role": "Mapeo y comunicación de sistemas, relaciones, actores y ecosistemas.",
+    "interfaces": [
+      "hosted_web"
+    ],
+    "network_types": [
+      "organizational",
+      "systems",
+      "stakeholder",
+      "social"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "commercial_or_freemium",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Adecuado para mapas relacionales comunicables; comprobar exportación, privacidad y plan."
+  },
+  {
+    "id": "graphistry",
+    "name": "Graphistry",
+    "url": "https://www.graphistry.com/",
+    "primary_category": "web_hosted",
+    "role": "Exploración visual de grafos a escala, con flujos de analítica y aceleración por GPU según despliegue.",
+    "interfaces": [
+      "hosted_or_self_hosted_verify"
+    ],
+    "network_types": [
+      "fraud",
+      "security",
+      "enterprise",
+      "attributed"
+    ],
+    "scale_profile": "large_to_very_large",
+    "maturity": "commercial_or_freemium",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Evaluar modalidad de despliegue, gobierno de datos y coste total."
+  },
+  {
+    "id": "cosmograph",
+    "name": "Cosmograph",
+    "url": "https://cosmograph.app/",
+    "primary_category": "web_hosted",
+    "role": "Visualización interactiva de grafos con enfoque en renderizado y exploración a escala.",
+    "interfaces": [
+      "browser",
+      "library"
+    ],
+    "network_types": [
+      "general",
+      "attributed",
+      "large_graph"
+    ],
+    "scale_profile": "large_to_very_large_for_rendering",
+    "maturity": "active_product",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Separar capacidad de renderizar muchos elementos de capacidad de calcular analítica avanzada."
+  },
+  {
+    "id": "graph-commons",
+    "name": "Graph Commons",
+    "url": "https://graphcommons.com/",
+    "primary_category": "web_hosted",
+    "role": "Crear, analizar y compartir mapas de redes de forma colaborativa.",
+    "interfaces": [
+      "hosted_web"
+    ],
+    "network_types": [
+      "social",
+      "organizational",
+      "knowledge",
+      "systems"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "commercial_or_freemium",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Examinar permisos, exportación y política de tratamiento de datos antes de usar información sensible."
+  },
+  {
+    "id": "linkurious",
+    "name": "Linkurious",
+    "url": "https://linkurious.com/",
+    "primary_category": "web_hosted",
+    "role": "Capa visual de exploración e investigación para datos en grafos y bases de datos de grafos.",
+    "interfaces": [
+      "enterprise_web"
+    ],
+    "network_types": [
+      "knowledge_graph",
+      "fraud",
+      "investigation",
+      "security"
+    ],
+    "scale_profile": "large_to_very_large",
+    "maturity": "commercial",
+    "cost_model": "commercial",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Orientación empresarial; validar integración real, roles, auditoría, seguridad y coste."
+  },
+  {
+    "id": "neo4j-bloom",
+    "name": "Neo4j Bloom",
+    "url": "https://neo4j.com/product/bloom/",
+    "primary_category": "web_hosted",
+    "role": "Exploración visual de datos almacenados en Neo4j mediante búsquedas y vistas gráficas.",
+    "interfaces": [
+      "browser_or_desktop_verify"
+    ],
+    "network_types": [
+      "knowledge_graph",
+      "enterprise",
+      "fraud"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "established_product",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Está vinculado al ecosistema Neo4j; no es un visualizador independiente de cualquier formato."
+  },
+  {
+    "id": "graphxr",
+    "name": "GraphXR",
+    "url": "https://www.kineviz.com/graphxr",
+    "primary_category": "web_hosted",
+    "role": "Exploración visual de grafos con capacidades inmersivas/3D para ciertos casos de uso.",
+    "interfaces": [
+      "hosted_web"
+    ],
+    "network_types": [
+      "knowledge_graph",
+      "enterprise",
+      "attributed"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "commercial",
+    "cost_model": "commercial",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "La inmersión 3D no garantiza mejor legibilidad; validar con usuarios y tareas reales."
+  },
+  {
+    "id": "gephisto-pending",
+    "name": "Gephisto (nombre por validar)",
+    "url": "https://lnkd.in/diSp3BWN",
+    "primary_category": "web_hosted",
+    "role": "Recurso aportado en la lista original; el destino y el nombre exacto no se han podido confirmar con suficiente confianza.",
+    "interfaces": [
+      "unknown"
+    ],
+    "network_types": [
+      "unknown"
+    ],
+    "scale_profile": "unknown",
+    "maturity": "unverified",
+    "cost_model": "unknown",
+    "verification_status": "needs_link_resolution",
+    "source_origin": "user_provided",
+    "notes": "No recomendar hasta resolver el enlace corto y verificar autoría, funcionalidad, privacidad y mantenimiento."
+  },
+  {
+    "id": "graphinsight-pending",
+    "name": "GraphInsight (nombre por validar)",
+    "url": "https://lnkd.in/d5XnkWJr",
+    "primary_category": "needs_triage",
+    "role": "Recurso aportado en la lista original; destino y producto exacto pendientes de validación.",
+    "interfaces": [
+      "unknown"
+    ],
+    "network_types": [
+      "unknown"
+    ],
+    "scale_profile": "unknown",
+    "maturity": "unverified",
+    "cost_model": "unknown",
+    "verification_status": "needs_link_resolution",
+    "source_origin": "user_provided",
+    "notes": "No recomendar hasta resolver el enlace corto y verificar identidad y estado."
+  },
+  {
+    "id": "networkx",
+    "name": "NetworkX",
+    "url": "https://networkx.org/",
+    "primary_category": "python_analysis",
+    "role": "Construcción, transformación y análisis de grafos; útil para prototipado y metodología.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "general",
+      "social",
+      "infrastructure",
+      "scientific"
+    ],
+    "scale_profile": "small_to_medium_or_sparse_moderate",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "official_page_checked_2026-10-18",
+    "source_origin": "user_provided",
+    "notes": "Su documentación indica que el dibujo es básico; exportar a un visualizador especializado cuando la exploración visual sea central."
+  },
+  {
+    "id": "igraph",
+    "name": "igraph",
+    "url": "https://igraph.org/",
+    "primary_category": "python_analysis",
+    "role": "Librería multiplataforma para análisis de grafos con interfaces para varios lenguajes.",
+    "interfaces": [
+      "python",
+      "r",
+      "c"
+    ],
+    "network_types": [
+      "general",
+      "social",
+      "scientific"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Buena opción para análisis eficiente; distinguir la interfaz de lenguaje del núcleo."
+  },
+  {
+    "id": "graph-tool",
+    "name": "graph-tool",
+    "url": "https://graph-tool.skewed.de/",
+    "primary_category": "python_analysis",
+    "role": "Análisis de grafos en Python apoyado en implementación de alto rendimiento.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "general",
+      "scientific"
+    ],
+    "scale_profile": "large_for_supported_algorithms",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Instalación y entorno pueden ser más exigentes que NetworkX; medir el coste operativo."
+  },
+  {
+    "id": "networkit",
+    "name": "NetworKit",
+    "url": "https://networkit.github.io/",
+    "primary_category": "python_analysis",
+    "role": "Análisis escalable de redes con implementaciones eficientes y componentes paralelos.",
+    "interfaces": [
+      "python",
+      "c++"
+    ],
+    "network_types": [
+      "general",
+      "large_graph"
+    ],
+    "scale_profile": "large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Evaluar algoritmos concretos, no solo benchmarks globales."
+  },
+  {
+    "id": "snap-stanford",
+    "name": "SNAP",
+    "url": "https://snap.stanford.edu/",
+    "primary_category": "python_analysis",
+    "role": "Librerías y recursos para análisis de grafos y redes de gran tamaño.",
+    "interfaces": [
+      "c++",
+      "python",
+      "data"
+    ],
+    "network_types": [
+      "social",
+      "web",
+      "citation",
+      "general"
+    ],
+    "scale_profile": "large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "La página SNAP también sirve como fuente de datasets; separar software y datos en el registro."
+  },
+  {
+    "id": "scikit-network",
+    "name": "scikit-network",
+    "url": "https://scikit-network.readthedocs.io/",
+    "primary_category": "python_analysis",
+    "role": "Algoritmos de análisis de redes con interfaz orientada al ecosistema científico de Python.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "general",
+      "clustering",
+      "ranking"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Comparar funciones y supuestos con igraph, NetworkX y NetworKit."
+  },
+  {
+    "id": "rustworkx",
+    "name": "rustworkx",
+    "url": "https://www.rustworkx.org/",
+    "primary_category": "python_analysis",
+    "role": "Estructuras y algoritmos de grafos de alto rendimiento implementados en Rust.",
+    "interfaces": [
+      "python",
+      "rust"
+    ],
+    "network_types": [
+      "general",
+      "dependency"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Útil cuando rendimiento y ecosistema Python importan; verificar que cubra el algoritmo específico requerido."
+  },
+  {
+    "id": "graspologic",
+    "name": "graspologic",
+    "url": "https://github.com/microsoft/graspologic",
+    "primary_category": "python_analysis",
+    "role": "Métodos estadísticos, modelado y análisis de redes simples y múltiples.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "statistical_networks",
+      "multilayer",
+      "scientific"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Adecuado para inferencia/modelado; revisar actividad, dependencias y citas de cada método."
+  },
+  {
+    "id": "cdlib",
+    "name": "CDlib",
+    "url": "https://cdlib.readthedocs.io/",
+    "primary_category": "python_analysis",
+    "role": "Biblioteca para detección de comunidades y evaluación de algoritmos de partición.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "community_detection",
+      "general"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "La comunidad detectada depende de algoritmo, parámetros y objetivo; no tratarla como una verdad única."
+  },
+  {
+    "id": "python-louvain",
+    "name": "python-louvain",
+    "url": "https://python-louvain.readthedocs.io/",
+    "primary_category": "python_analysis",
+    "role": "Implementación del método Louvain de detección de comunidades para grafos.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "community_detection"
+    ],
+    "scale_profile": "small_to_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Es un método especializado, no un toolkit integral de redes."
+  },
+  {
+    "id": "pygsp",
+    "name": "PyGSP",
+    "url": "https://pygsp.readthedocs.io/",
+    "primary_category": "python_analysis",
+    "role": "Procesamiento de señales sobre grafos y herramientas relacionadas con grafos espectrales.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "signal_on_graphs",
+      "scientific"
+    ],
+    "scale_profile": "small_to_large_by_representation",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Pertinente cuando la señal y el operador de grafo forman parte del problema científico."
+  },
+  {
+    "id": "py3plex",
+    "name": "Py3Plex",
+    "url": "https://github.com/SkBlaz/py3plex",
+    "primary_category": "python_analysis",
+    "role": "Análisis de redes multicapa y redes complejas con flujos Python.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "multilayer",
+      "multiplex",
+      "complex"
+    ],
+    "scale_profile": "medium_to_large_verify",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Verificar mantenimiento y cobertura del modelo multilayer elegido."
+  },
+  {
+    "id": "netwulf",
+    "name": "netwulf",
+    "url": "https://github.com/benmaier/netwulf",
+    "primary_category": "python_analysis",
+    "role": "Herramienta ligera para visualización y refinamiento interactivo de redes desde Python.",
+    "interfaces": [
+      "python",
+      "notebook"
+    ],
+    "network_types": [
+      "general"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Orientado a la exploración visual en flujos Python; no sustituye un motor analítico escalable."
+  },
+  {
+    "id": "nxviz",
+    "name": "nxviz",
+    "url": "https://github.com/ericmjl/nxviz",
+    "primary_category": "python_analysis",
+    "role": "Representaciones alternativas de redes integradas con NetworkX y Matplotlib.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "general",
+      "categorical"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Revisar estado de mantenimiento antes de incorporarlo a producción."
+  },
+  {
+    "id": "pydot",
+    "name": "pydot",
+    "url": "https://github.com/pydot/pydot",
+    "primary_category": "python_analysis",
+    "role": "Interfaz Python para generar y procesar grafos DOT con Graphviz.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "directed",
+      "hierarchical",
+      "dependency"
+    ],
+    "scale_profile": "small_to_large_static",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Es una capa de interoperabilidad/renderizado, no una librería general de métricas."
+  },
+  {
+    "id": "pygraphviz",
+    "name": "PyGraphviz",
+    "url": "https://pygraphviz.github.io/",
+    "primary_category": "python_analysis",
+    "role": "Interfaz Python a Graphviz para creación y manipulación de grafos y layouts.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "directed",
+      "hierarchical",
+      "dependency"
+    ],
+    "scale_profile": "small_to_large_static",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "La instalación requiere compatibilidad con Graphviz del sistema."
+  },
+  {
+    "id": "pyvis",
+    "name": "PyVis",
+    "url": "https://pyvis.readthedocs.io/",
+    "primary_category": "python_analysis",
+    "role": "Generación de visualizaciones de redes interactivas basadas en navegador desde Python.",
+    "interfaces": [
+      "python",
+      "html"
+    ],
+    "network_types": [
+      "general"
+    ],
+    "scale_profile": "small_to_medium_verify",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Útil para prototipos e informes; medir rendimiento en navegador con el tamaño real."
+  },
+  {
+    "id": "pygraphistry",
+    "name": "PyGraphistry",
+    "url": "https://github.com/graphistry/pygraphistry",
+    "primary_category": "python_analysis",
+    "role": "API Python para cargar, transformar y explorar grafos mediante Graphistry.",
+    "interfaces": [
+      "python",
+      "hosted_or_self_hosted_verify"
+    ],
+    "network_types": [
+      "general",
+      "large_graph",
+      "enterprise"
+    ],
+    "scale_profile": "large_to_very_large_by_deployment",
+    "maturity": "active_project",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "La biblioteca conecta con el producto/servicio Graphistry; revisar modalidad de despliegue, licencia y tratamiento de datos."
+  },
+  {
+    "id": "py4cytoscape",
+    "name": "py4cytoscape",
+    "url": "https://py4cytoscape.readthedocs.io/",
+    "primary_category": "python_analysis",
+    "role": "Automatización desde Python de operaciones sobre Cytoscape.",
+    "interfaces": [
+      "python",
+      "cytoscape_app"
+    ],
+    "network_types": [
+      "biological",
+      "general"
+    ],
+    "scale_profile": "small_to_large_by_cytoscape",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Permite integrar análisis programático con el entorno Cytoscape; verificar requisitos de versión."
+  },
+  {
+    "id": "ipycytoscape",
+    "name": "ipycytoscape",
+    "url": "https://github.com/cytoscape/ipycytoscape",
+    "primary_category": "python_analysis",
+    "role": "Visualización Cytoscape.js en notebooks Jupyter.",
+    "interfaces": [
+      "python",
+      "jupyter"
+    ],
+    "network_types": [
+      "general",
+      "biological"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Adecuado para notebook interactivo, no para plataforma multiusuario sin trabajo adicional."
+  },
+  {
+    "id": "ipysigma",
+    "name": "ipysigma",
+    "url": "https://github.com/medialab/ipysigma",
+    "primary_category": "python_analysis",
+    "role": "Visualización de redes con Sigma.js dentro de notebooks.",
+    "interfaces": [
+      "python",
+      "jupyter",
+      "webgl"
+    ],
+    "network_types": [
+      "general",
+      "large_graph_exploration"
+    ],
+    "scale_profile": "medium_to_large_verify",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Probar memoria, renderizado y UX con el dataset de destino."
+  },
+  {
+    "id": "ipyvolume",
+    "name": "ipyvolume",
+    "url": "https://ipyvolume.readthedocs.io/",
+    "primary_category": "python_analysis",
+    "role": "Visualización 3D en notebooks; se incluye como herramienta adyacente, no como analizador de redes.",
+    "interfaces": [
+      "python",
+      "jupyter",
+      "3d"
+    ],
+    "network_types": [
+      "3d_spatial",
+      "general_visualization"
+    ],
+    "scale_profile": "depends_on_scene",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Usar solo si la representación 3D aporta una pregunta analítica identificable."
+  },
+  {
+    "id": "ipydagred3",
+    "name": "ipydagred3",
+    "url": "https://github.com/timkpaine/ipydagred3",
+    "primary_category": "python_analysis",
+    "role": "Componente de visualización de grafos dirigidos/acíclicos en notebooks.",
+    "interfaces": [
+      "python",
+      "jupyter"
+    ],
+    "network_types": [
+      "directed_acyclic_graph",
+      "dependency"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Verificar mantenimiento, compatibilidad Jupyter y uso apropiado antes de invertir tiempo."
+  },
+  {
+    "id": "pytorch-geometric",
+    "name": "PyTorch Geometric (PyG)",
+    "url": "https://pytorch-geometric.readthedocs.io/",
+    "primary_category": "learning_research",
+    "role": "Aprendizaje profundo sobre datos estructurados como grafos, incluidas GNN.",
+    "interfaces": [
+      "python",
+      "pytorch",
+      "gpu"
+    ],
+    "network_types": [
+      "graph_ml",
+      "attributed",
+      "heterogeneous"
+    ],
+    "scale_profile": "medium_to_very_large_with_sampling",
+    "maturity": "established_research_stack",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "No es, por sí mismo, una herramienta de visualización para exploración humana."
+  },
+  {
+    "id": "dgl",
+    "name": "Deep Graph Library (DGL)",
+    "url": "https://www.dgl.ai/",
+    "primary_category": "learning_research",
+    "role": "Framework para entrenamiento y despliegue de modelos de aprendizaje sobre grafos.",
+    "interfaces": [
+      "python",
+      "deep_learning"
+    ],
+    "network_types": [
+      "graph_ml",
+      "heterogeneous",
+      "attributed"
+    ],
+    "scale_profile": "medium_to_large_with_sampling",
+    "maturity": "established_research_stack",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Comparar soporte de backend, ejemplos, licencias y ritmo de releases con PyG."
+  },
+  {
+    "id": "cytoscape-js",
+    "name": "Cytoscape.js",
+    "url": "https://js.cytoscape.org/",
+    "primary_category": "web_visualization",
+    "role": "Biblioteca JavaScript para visualizar e interactuar con redes en aplicaciones web.",
+    "interfaces": [
+      "javascript",
+      "web"
+    ],
+    "network_types": [
+      "general",
+      "biological",
+      "dependency"
+    ],
+    "scale_profile": "small_to_large_with_tuning",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Adecuada para interacción rica y aplicaciones web; no confundir con la aplicación de escritorio Cytoscape."
+  },
+  {
+    "id": "sigma-js",
+    "name": "Sigma.js",
+    "url": "https://www.sigmajs.org/",
+    "primary_category": "web_visualization",
+    "role": "Biblioteca JavaScript especializada en renderizar grafos interactivos en navegador.",
+    "interfaces": [
+      "javascript",
+      "webgl"
+    ],
+    "network_types": [
+      "general",
+      "large_graph"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Complementar con un modelo de grafo/analítica cuando la app necesite cálculos avanzados."
+  },
+  {
+    "id": "graphology",
+    "name": "Graphology",
+    "url": "https://graphology.github.io/",
+    "primary_category": "web_visualization",
+    "role": "Modelo y API de grafo JavaScript para construir y manipular redes.",
+    "interfaces": [
+      "javascript"
+    ],
+    "network_types": [
+      "general"
+    ],
+    "scale_profile": "small_to_large_depends_on_app",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "A menudo se combina con Sigma.js; no es un producto de visualización completo por sí solo."
+  },
+  {
+    "id": "d3-force",
+    "name": "D3 force",
+    "url": "https://d3js.org/d3-force",
+    "primary_category": "web_visualization",
+    "role": "Simulación de fuerzas para layouts de grafos en visualizaciones D3.",
+    "interfaces": [
+      "javascript",
+      "web"
+    ],
+    "network_types": [
+      "general"
+    ],
+    "scale_profile": "small_to_medium_interaction",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Proporciona primitives de layout; composición y accesibilidad quedan a cargo del desarrollo."
+  },
+  {
+    "id": "vis-network",
+    "name": "vis-network",
+    "url": "https://visjs.github.io/vis-network/",
+    "primary_category": "web_visualization",
+    "role": "Biblioteca de visualización de redes interactiva para web.",
+    "interfaces": [
+      "javascript",
+      "web"
+    ],
+    "network_types": [
+      "general"
+    ],
+    "scale_profile": "small_to_medium_verify",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Usar el proyecto vis-network actual; no asumir que el antiguo dominio vis.js identifica una única librería activa."
+  },
+  {
+    "id": "react-force-graph",
+    "name": "react-force-graph",
+    "url": "https://github.com/vasturiano/react-force-graph",
+    "primary_category": "web_visualization",
+    "role": "Componentes React para grafos 2D/3D/VR con layouts basados en fuerza.",
+    "interfaces": [
+      "javascript",
+      "react",
+      "webgl"
+    ],
+    "network_types": [
+      "general",
+      "3d"
+    ],
+    "scale_profile": "small_to_medium_or_medium",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Evaluar accesibilidad, rendimiento y utilidad real de 3D según tarea."
+  },
+  {
+    "id": "3d-force-graph",
+    "name": "3d-force-graph",
+    "url": "https://github.com/vasturiano/3d-force-graph",
+    "primary_category": "web_visualization",
+    "role": "Visualización de grafos 3D en navegador.",
+    "interfaces": [
+      "javascript",
+      "webgl"
+    ],
+    "network_types": [
+      "general",
+      "3d"
+    ],
+    "scale_profile": "small_to_medium_or_medium",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "El volumen visual puede aumentar la carga cognitiva; justificar 3D con la tarea, no por estética."
+  },
+  {
+    "id": "antv-g6",
+    "name": "AntV G6",
+    "url": "https://g6.antv.antgroup.com/",
+    "primary_category": "web_visualization",
+    "role": "Framework JavaScript/TypeScript para visualización de grafos y análisis de interacciones.",
+    "interfaces": [
+      "javascript",
+      "typescript",
+      "web"
+    ],
+    "network_types": [
+      "general",
+      "enterprise",
+      "relationship"
+    ],
+    "scale_profile": "medium_to_large_verify",
+    "maturity": "active_project",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Evaluar versionado, paquetes de integración y cobertura de layouts del caso concreto."
+  },
+  {
+    "id": "xyflow",
+    "name": "xyflow (React Flow / Svelte Flow)",
+    "url": "https://xyflow.com/",
+    "primary_category": "web_visualization",
+    "role": "Construcción de editores de nodos, flujos y diagramas interactivos.",
+    "interfaces": [
+      "javascript",
+      "react",
+      "svelte"
+    ],
+    "network_types": [
+      "workflow",
+      "dependency",
+      "process"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "established",
+    "cost_model": "open_source_core_verify_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Especializado en interfaces de nodos y flujos; no equivale a un toolkit de ciencia de redes."
+  },
+  {
+    "id": "cosmograph-lib",
+    "name": "Cosmograph visualization library",
+    "url": "https://cosmograph.app/docs-lib/",
+    "primary_category": "web_visualization",
+    "role": "Biblioteca de visualización de grafos con énfasis en rendimiento en navegador.",
+    "interfaces": [
+      "javascript",
+      "webgl"
+    ],
+    "network_types": [
+      "general",
+      "large_graph"
+    ],
+    "scale_profile": "large_to_very_large_for_rendering",
+    "maturity": "active_product",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Consultar la matriz de capacidades vigente y probar los costes con la arquitectura propia."
+  },
+  {
+    "id": "r-igraph",
+    "name": "igraph for R",
+    "url": "https://igraph.org/r/",
+    "primary_category": "r_analysis",
+    "role": "Análisis de grafos para estadística y ciencias sociales/científicas en R.",
+    "interfaces": [
+      "r"
+    ],
+    "network_types": [
+      "general",
+      "social",
+      "scientific"
+    ],
+    "scale_profile": "medium_to_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Ampliar con ggraph/tidygraph para flujos de visualización idiomáticos en R."
+  },
+  {
+    "id": "tidygraph",
+    "name": "tidygraph",
+    "url": "https://tidygraph.data-imaginist.com/",
+    "primary_category": "r_analysis",
+    "role": "Modelo y manipulación de grafos con interfaces compatibles con el ecosistema tidyverse.",
+    "interfaces": [
+      "r"
+    ],
+    "network_types": [
+      "general",
+      "attributed"
+    ],
+    "scale_profile": "small_to_large_by_backend",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Se suele combinar con ggraph; verificar versiones compatibles."
+  },
+  {
+    "id": "ggraph",
+    "name": "ggraph",
+    "url": "https://ggraph.data-imaginist.com/",
+    "primary_category": "r_analysis",
+    "role": "Visualización de grafos con gramática de gráficos en R.",
+    "interfaces": [
+      "r",
+      "static_visualization"
+    ],
+    "network_types": [
+      "general",
+      "scientific",
+      "social"
+    ],
+    "scale_profile": "small_to_medium_static",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Potente para figuras reproducibles; la interactividad requiere herramientas adicionales."
+  },
+  {
+    "id": "visnetwork-r",
+    "name": "visNetwork",
+    "url": "https://datastorm-open.github.io/visNetwork/",
+    "primary_category": "r_analysis",
+    "role": "Visualizaciones interactivas de redes en aplicaciones y documentos R.",
+    "interfaces": [
+      "r",
+      "htmlwidgets"
+    ],
+    "network_types": [
+      "general"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Distinguir la API R del proyecto JavaScript vis-network subyacente."
+  },
+  {
+    "id": "networkd3",
+    "name": "networkD3",
+    "url": "https://christophergandrud.github.io/networkD3/",
+    "primary_category": "r_analysis",
+    "role": "Visualizaciones de redes D3 desde R.",
+    "interfaces": [
+      "r",
+      "htmlwidgets"
+    ],
+    "network_types": [
+      "general"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Verificar el estado de mantenimiento y compatibilidad en R reciente."
+  },
+  {
+    "id": "ndtv",
+    "name": "ndtv",
+    "url": "https://statnet.org/",
+    "primary_category": "higher_order_temporal",
+    "role": "Análisis/visualización de redes dinámicas en el ecosistema R/statnet.",
+    "interfaces": [
+      "r"
+    ],
+    "network_types": [
+      "temporal",
+      "social"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Revisar documentación específica del paquete ndtv y el formato temporal antes de adoptar."
+  },
+  {
+    "id": "multinet-r",
+    "name": "multinet",
+    "url": "https://github.com/cran/multinet",
+    "primary_category": "higher_order_temporal",
+    "role": "Representación y análisis de redes multicapa en R.",
+    "interfaces": [
+      "r"
+    ],
+    "network_types": [
+      "multilayer",
+      "multiplex"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Confirmar mantenimiento del mirror y versión original del paquete."
+  },
+  {
+    "id": "muxviz",
+    "name": "MuxViz",
+    "url": "http://muxviz.net/",
+    "primary_category": "higher_order_temporal",
+    "role": "Entorno de análisis y visualización de redes multicapa/multiplex.",
+    "interfaces": [
+      "r",
+      "octave",
+      "desktop_verify"
+    ],
+    "network_types": [
+      "multilayer",
+      "multiplex"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source_verify",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Revisar actividad, compatibilidad y documentación; se incorpora como referencia especializada."
+  },
+  {
+    "id": "raphtory",
+    "name": "Raphtory",
+    "url": "https://www.raphtory.com/",
+    "primary_category": "higher_order_temporal",
+    "role": "Plataforma y librerías para construir y analizar redes temporales/dinámicas.",
+    "interfaces": [
+      "python",
+      "rust",
+      "distributed_verify"
+    ],
+    "network_types": [
+      "temporal",
+      "event_graph"
+    ],
+    "scale_profile": "large",
+    "maturity": "active_project",
+    "cost_model": "open_source_verify_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Ideal como candidato temporal; confirmar arquitectura, licencia y estado de mantenimiento."
+  },
+  {
+    "id": "pathpy",
+    "name": "pathpy",
+    "url": "https://www.pathpy.net/",
+    "primary_category": "higher_order_temporal",
+    "role": "Análisis de redes temporales, caminos y modelos de orden superior.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "temporal",
+      "higher_order",
+      "path_network"
+    ],
+    "scale_profile": "small_to_medium",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Útil cuando la secuencia de eventos importa más que el snapshot de conexiones."
+  },
+  {
+    "id": "hypernetx",
+    "name": "HyperNetX",
+    "url": "https://hypernetx.readthedocs.io/",
+    "primary_category": "higher_order_temporal",
+    "role": "Análisis y visualización de hipergrafos, donde una relación puede conectar más de dos entidades.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "hypergraph",
+      "higher_order"
+    ],
+    "scale_profile": "small_to_medium_by_model",
+    "maturity": "research_software",
+    "cost_model": "open_source",
+    "verification_status": "official_page_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "Considerarlo cuando convertir una relación grupal en aristas binarias perdería información."
+  },
+  {
+    "id": "xgi",
+    "name": "XGI",
+    "url": "https://xgi-org.github.io/xgi/",
+    "primary_category": "higher_order_temporal",
+    "role": "Modelado, análisis, generación de datos y visualización de redes de orden superior.",
+    "interfaces": [
+      "python"
+    ],
+    "network_types": [
+      "hypergraph",
+      "simplicial_complex",
+      "higher_order"
+    ],
+    "scale_profile": "small_to_medium_by_model",
+    "maturity": "active_research_software",
+    "cost_model": "open_source",
+    "verification_status": "official_page_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "Alternativa/compañero de HyperNetX; comparar representaciones y algoritmos concretos."
+  },
+  {
+    "id": "cugraph",
+    "name": "RAPIDS cuGraph",
+    "url": "https://docs.rapids.ai/api/cugraph/stable/",
+    "primary_category": "scale_distributed",
+    "role": "Algoritmos de grafos acelerados por GPU dentro del ecosistema RAPIDS.",
+    "interfaces": [
+      "python",
+      "c++",
+      "cuda",
+      "gpu"
+    ],
+    "network_types": [
+      "general",
+      "graph_analytics",
+      "graph_ml_adjacent"
+    ],
+    "scale_profile": "large_to_very_large",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "official_docs_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "Los requisitos de GPU, CUDA, Python y sistema operativo condicionan el coste total."
+  },
+  {
+    "id": "graphscope",
+    "name": "GraphScope",
+    "url": "https://graphscope.io/docs/",
+    "primary_category": "scale_distributed",
+    "role": "Plataforma distribuida para análisis, consulta interactiva y workloads de aprendizaje de grafos.",
+    "interfaces": [
+      "python",
+      "distributed",
+      "kubernetes"
+    ],
+    "network_types": [
+      "general",
+      "enterprise",
+      "graph_ml"
+    ],
+    "scale_profile": "very_large_cluster",
+    "maturity": "active_project",
+    "cost_model": "open_source_verify_terms",
+    "verification_status": "official_docs_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "No es una base de datos de grafos general; verificar seguridad, operación y despliegue según documentación vigente."
+  },
+  {
+    "id": "spark-graphx",
+    "name": "Apache Spark GraphX",
+    "url": "https://spark.apache.org/graphx/",
+    "primary_category": "scale_distributed",
+    "role": "Procesamiento de grafos distribuido en el entorno Spark.",
+    "interfaces": [
+      "scala",
+      "spark",
+      "distributed"
+    ],
+    "network_types": [
+      "general",
+      "data_engineering"
+    ],
+    "scale_profile": "large_to_very_large_cluster",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Tiene sentido si el equipo ya opera Spark; evitar añadir un stack distribuido para redes pequeñas."
+  },
+  {
+    "id": "ogdf",
+    "name": "OGDF",
+    "url": "https://ogdf.net/",
+    "primary_category": "research_layout_algorithms",
+    "role": "Framework C++ de algoritmos de grafos, especialmente dibujo automático y layouts.",
+    "interfaces": [
+      "c++",
+      "research"
+    ],
+    "network_types": [
+      "general",
+      "graph_drawing",
+      "graph_algorithms"
+    ],
+    "scale_profile": "research_benchmark_scale",
+    "maturity": "research_software",
+    "cost_model": "open_source_verify_terms",
+    "verification_status": "official_docs_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "Útil para investigación de layouts y algoritmos; registrar build, parámetros y versión."
+  },
+  {
+    "id": "graphtool-graphblas",
+    "name": "GraphBLAS (SuiteSparse implementation)",
+    "url": "https://graphblas.org/",
+    "primary_category": "scale_distributed",
+    "role": "Especificación y ecosistema de primitivas de álgebra lineal dispersa para grafos.",
+    "interfaces": [
+      "c",
+      "c++",
+      "python_bindings_varies"
+    ],
+    "network_types": [
+      "sparse_graph",
+      "graph_algorithms"
+    ],
+    "scale_profile": "large_to_very_large",
+    "maturity": "research_and_production_ecosystem",
+    "cost_model": "varies_by_implementation",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Es una capa computacional; no debe catalogarse como interfaz de visualización final."
+  },
+  {
+    "id": "ogb",
+    "name": "Open Graph Benchmark (OGB)",
+    "url": "https://ogb.stanford.edu/",
+    "primary_category": "datasets_benchmarks",
+    "role": "Datasets y protocolos de evaluación para machine learning sobre grafos.",
+    "interfaces": [
+      "python",
+      "datasets"
+    ],
+    "network_types": [
+      "graph_ml",
+      "node_property",
+      "link_prediction",
+      "graph_property"
+    ],
+    "scale_profile": "benchmark_dependent",
+    "maturity": "research_benchmark",
+    "cost_model": "open_source_data_terms_vary",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Respetar las divisiones de datos, métricas y protocolos del benchmark."
+  },
+  {
+    "id": "neo4j-gds",
+    "name": "Neo4j Graph Data Science",
+    "url": "https://neo4j.com/product/graph-data-science/",
+    "primary_category": "graph_database_query",
+    "role": "Algoritmos de ciencia de grafos en el ecosistema Neo4j.",
+    "interfaces": [
+      "cypher",
+      "java",
+      "python_integrations_verify"
+    ],
+    "network_types": [
+      "knowledge_graph",
+      "enterprise",
+      "recommendations"
+    ],
+    "scale_profile": "medium_to_very_large_verify",
+    "maturity": "commercial_or_community_edition",
+    "cost_model": "verify_current_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Separar consulta/almacenamiento de base de datos de la analítica y de su visualización."
+  },
+  {
+    "id": "snap-datasets",
+    "name": "SNAP datasets",
+    "url": "https://snap.stanford.edu/data/",
+    "primary_category": "datasets_benchmarks",
+    "role": "Colección de datasets de redes reales y sintéticas para investigación.",
+    "interfaces": [
+      "download",
+      "python"
+    ],
+    "network_types": [
+      "social",
+      "web",
+      "citation",
+      "temporal",
+      "infrastructure"
+    ],
+    "scale_profile": "varies_by_dataset",
+    "maturity": "research_resource",
+    "cost_model": "terms_vary_by_dataset",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Cada dataset necesita verificar licencia, fecha, sesgos, definición de nodo/arista y unidad de observación."
+  },
+  {
+    "id": "konect",
+    "name": "KONECT",
+    "url": "http://konect.cc/",
+    "primary_category": "datasets_benchmarks",
+    "role": "Colección de redes para análisis y comparación de métodos.",
+    "interfaces": [
+      "download"
+    ],
+    "network_types": [
+      "social",
+      "web",
+      "citation",
+      "biological",
+      "infrastructure"
+    ],
+    "scale_profile": "varies_by_dataset",
+    "maturity": "research_resource",
+    "cost_model": "terms_vary_by_dataset",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Revisar fuente original y licencia de cada dataset; la colección no implica derechos uniformes."
+  },
+  {
+    "id": "network-repository",
+    "name": "Network Repository",
+    "url": "https://networkrepository.com/",
+    "primary_category": "datasets_benchmarks",
+    "role": "Repositorio interactivo de datasets de redes y herramientas de análisis visual.",
+    "interfaces": [
+      "web",
+      "download"
+    ],
+    "network_types": [
+      "social",
+      "biological",
+      "technological",
+      "temporal",
+      "spatial",
+      "general"
+    ],
+    "scale_profile": "small_to_very_large_by_dataset",
+    "maturity": "research_resource",
+    "cost_model": "terms_vary_by_dataset",
+    "verification_status": "official_page_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "La web declara colecciones diversas y analítica interactiva; registrar dataset y versión exactos en cada experimento."
+  },
+  {
+    "id": "icon-datasets",
+    "name": "ICON: Interactive Connectedness",
+    "url": "https://icon.colorado.edu/",
+    "primary_category": "datasets_benchmarks",
+    "role": "Portal académico de datos relacionados con sistemas de redes, comunidad y recursos.",
+    "interfaces": [
+      "web",
+      "download"
+    ],
+    "network_types": [
+      "social",
+      "scientific",
+      "interdisciplinary"
+    ],
+    "scale_profile": "varies_by_dataset",
+    "maturity": "research_resource",
+    "cost_model": "terms_vary_by_dataset",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Confirmar disponibilidad, metadatos y licencia de cada recurso concreto."
+  },
+  {
+    "id": "suite-sparse",
+    "name": "SuiteSparse Matrix Collection",
+    "url": "https://sparse.tamu.edu/",
+    "primary_category": "datasets_benchmarks",
+    "role": "Colección de matrices dispersas usadas en investigación y benchmarking computacional.",
+    "interfaces": [
+      "download",
+      "matrix_formats"
+    ],
+    "network_types": [
+      "sparse_graph",
+      "scientific",
+      "engineering"
+    ],
+    "scale_profile": "large_to_very_large_by_matrix",
+    "maturity": "research_benchmark",
+    "cost_model": "terms_vary_by_dataset",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "No todas las matrices equivalen sin más a una red semánticamente interpretada; revisar metadatos."
+  },
+  {
+    "id": "xgi-data",
+    "name": "XGI-DATA",
+    "url": "https://github.com/xgi-org/xgi-data",
+    "primary_category": "datasets_benchmarks",
+    "role": "Datos para redes de orden superior e hipergrafos en el ecosistema XGI.",
+    "interfaces": [
+      "python",
+      "download"
+    ],
+    "network_types": [
+      "hypergraph",
+      "higher_order"
+    ],
+    "scale_profile": "varies_by_dataset",
+    "maturity": "research_resource",
+    "cost_model": "terms_vary_by_dataset",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Documentar el esquema de interacción de orden superior y no binarizar sin justificación."
+  },
+  {
+    "id": "openalex",
+    "name": "OpenAlex",
+    "url": "https://openalex.org/",
+    "primary_category": "domain_data_sources",
+    "role": "Infraestructura abierta de metadatos de investigación útil para construir redes bibliométricas y de conocimiento.",
+    "interfaces": [
+      "api",
+      "dump"
+    ],
+    "network_types": [
+      "citation",
+      "bibliometric",
+      "scholarly"
+    ],
+    "scale_profile": "large_to_very_large",
+    "maturity": "active_data_platform",
+    "cost_model": "terms_and_rate_limits_verify",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Validar cobertura, identificadores, actualizaciones y condiciones de API/dumps."
+  },
+  {
+    "id": "grafana-node-graph",
+    "name": "Grafana Node Graph",
+    "url": "https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/visualizations/node-graph/",
+    "primary_category": "infrastructure_topology",
+    "role": "Panel para representar relaciones entre servicios, componentes o elementos de infraestructura dentro de dashboards.",
+    "interfaces": [
+      "web",
+      "dashboard"
+    ],
+    "network_types": [
+      "service_topology",
+      "infrastructure",
+      "dependencies"
+    ],
+    "scale_profile": "small_to_medium_visible_nodes",
+    "maturity": "production_feature",
+    "cost_model": "part_of_grafana_terms",
+    "verification_status": "official_docs_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "La documentación indica límite visual por defecto de 200 nodos visibles; no tratarlo como visualizador universal de grafos enormes."
+  },
+  {
+    "id": "netbox-visual-explorer",
+    "name": "NetBox Visual Explorer",
+    "url": "https://netboxlabs.com/docs/visual-explorer/",
+    "primary_category": "infrastructure_topology",
+    "role": "Visualizaciones de topología, cableado, racks y mapas WAN desde datos mantenidos en NetBox.",
+    "interfaces": [
+      "hosted_web"
+    ],
+    "network_types": [
+      "network_infrastructure",
+      "topology",
+      "geographic_wan"
+    ],
+    "scale_profile": "medium_to_large_by_view",
+    "maturity": "commercial_or_cloud_tiers",
+    "cost_model": "verify_current_terms",
+    "verification_status": "official_docs_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "Representa el inventario documentado en NetBox, no sustituye la monitorización del estado vivo de la red."
+  },
+  {
+    "id": "grafana-topology-exporter",
+    "name": "Grafana network-topology-exporter",
+    "url": "https://github.com/grafana/network-topology-exporter",
+    "primary_category": "infrastructure_topology",
+    "role": "Exportador para descubrir topología de red y publicar métricas/eventos para observabilidad.",
+    "interfaces": [
+      "go",
+      "metrics",
+      "otlp"
+    ],
+    "network_types": [
+      "ip_networks",
+      "l2_l3_topology"
+    ],
+    "scale_profile": "production_candidate",
+    "maturity": "active_project",
+    "cost_model": "AGPL-3.0_per_repo_page",
+    "verification_status": "official_repo_checked_2026-10-18",
+    "source_origin": "curated",
+    "notes": "Herramienta de descubrimiento/exportación; emparejar con el backend de métricas o visualización correspondiente."
+  },
+  {
+    "id": "netbox",
+    "name": "NetBox",
+    "url": "https://netbox.readthedocs.io/",
+    "primary_category": "infrastructure_topology",
+    "role": "Fuente de verdad de infraestructura de red documentada, inventario y relaciones de conectividad.",
+    "interfaces": [
+      "web",
+      "api"
+    ],
+    "network_types": [
+      "network_infrastructure",
+      "topology",
+      "ipam"
+    ],
+    "scale_profile": "enterprise_inventory",
+    "maturity": "established",
+    "cost_model": "open_source_core_verify_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Es un sistema de registro, no un motor general de análisis de redes científicas ni monitoreo live por sí solo."
+  },
+  {
+    "id": "network-canvas",
+    "name": "Network Canvas",
+    "url": "https://networkcanvas.com/",
+    "primary_category": "domain_solutions",
+    "role": "Herramientas para recolectar datos de redes personales/egocéntricas mediante instrumentos de investigación.",
+    "interfaces": [
+      "desktop",
+      "mobile",
+      "research"
+    ],
+    "network_types": [
+      "personal_networks",
+      "social"
+    ],
+    "scale_profile": "study_dependent",
+    "maturity": "research_tooling",
+    "cost_model": "open_source_verify_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "curated",
+    "notes": "Para estudios con personas: revisar consentimiento, seguridad, minimización de datos y aprobación ética."
+  },
+  {
+    "id": "vosviewer-domain",
+    "name": "VOSviewer (science mapping)",
+    "url": "https://www.vosviewer.com/",
+    "primary_category": "domain_solutions",
+    "role": "Mapeo de colaboración y estructura temática en literatura científica.",
+    "interfaces": [
+      "desktop"
+    ],
+    "network_types": [
+      "bibliometric",
+      "citation",
+      "coauthorship"
+    ],
+    "scale_profile": "medium_to_large_for_bibliometrics",
+    "maturity": "established",
+    "cost_model": "freeware_verify_terms",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "Revisar limpieza/desambiguación de nombres y limitaciones de las fuentes bibliográficas."
+  },
+  {
+    "id": "cytoscape-domain",
+    "name": "Cytoscape (bioinformatics workflows)",
+    "url": "https://cytoscape.org/",
+    "primary_category": "domain_solutions",
+    "role": "Ecosistema para integrar y explorar redes moleculares/biológicas y anotaciones.",
+    "interfaces": [
+      "desktop",
+      "apps",
+      "automation"
+    ],
+    "network_types": [
+      "biological",
+      "molecular",
+      "interaction_networks"
+    ],
+    "scale_profile": "medium_to_large_by_workflow",
+    "maturity": "established",
+    "cost_model": "open_source",
+    "verification_status": "primary_url_selected",
+    "source_origin": "user_provided",
+    "notes": "La interpretación requiere procedencia de las interacciones y conocimiento biológico específico."
+  },
+  {
+    "id": "awesome-network-analysis",
+    "name": "Awesome Network Analysis",
+    "url": "https://github.com/briatte/awesome-network-analysis",
+    "primary_category": "existing_repositories",
+    "role": "Lista amplia de recursos para construir, analizar y visualizar redes.",
+    "interfaces": [
+      "github",
+      "markdown"
+    ],
+    "network_types": [
+      "all"
+    ],
+    "scale_profile": "not_applicable",
+    "maturity": "curated_list",
+    "cost_model": "open_content_license_check_repo",
+    "verification_status": "official_repo_checked_2026-10-18",
+    "source_origin": "researched_external",
+    "notes": "Referencia más cercana a este proyecto; no copiar su catálogo completo. Enlazar y diferenciar por routing, esquema y evidencia."
+  },
+  {
+    "id": "awesome-graph-classification",
+    "name": "Awesome Graph Classification",
+    "url": "https://github.com/benedekrozemberczki/awesome-graph-classification",
+    "primary_category": "existing_repositories",
+    "role": "Lista de literatura y recursos sobre clasificación de grafos.",
+    "interfaces": [
+      "github",
+      "markdown"
+    ],
+    "network_types": [
+      "graph_ml"
+    ],
+    "scale_profile": "not_applicable",
+    "maturity": "curated_list",
+    "cost_model": "check_repo_license",
+    "verification_status": "primary_url_selected",
+    "source_origin": "researched_external",
+    "notes": "Especializada en graph ML, no en herramientas de visualización general."
+  },
+  {
+    "id": "awesome-community-detection",
+    "name": "Awesome Community Detection",
+    "url": "https://github.com/benedekrozemberczki/awesome-community-detection",
+    "primary_category": "existing_repositories",
+    "role": "Lista centrada en papers y métodos de detección de comunidades.",
+    "interfaces": [
+      "github",
+      "markdown"
+    ],
+    "network_types": [
+      "community_detection"
+    ],
+    "scale_profile": "not_applicable",
+    "maturity": "curated_list",
+    "cost_model": "check_repo_license",
+    "verification_status": "primary_url_selected",
+    "source_origin": "researched_external",
+    "notes": "Recurso metodológico complementario; verificar estado y licencia al consultar."
+  },
+  {
+    "id": "awesome-network-analysis-fork",
+    "name": "Fedex100 Awesome Network Analysis",
+    "url": "https://github.com/Fedex100/awesome-network-analysis",
+    "primary_category": "existing_repositories",
+    "role": "Lista derivada/alternativa de herramientas de análisis de redes.",
+    "interfaces": [
+      "github",
+      "markdown"
+    ],
+    "network_types": [
+      "all"
+    ],
+    "scale_profile": "not_applicable",
+    "maturity": "curated_list",
+    "cost_model": "check_repo_license",
+    "verification_status": "primary_url_selected",
+    "source_origin": "researched_external",
+    "notes": "Comparar con la lista principal antes de replicar entradas."
+  },
+  {
+    "id": "awesome-dataviz-graphs",
+    "name": "Awesome Dataviz: Graphs & Networks",
+    "url": "https://awesomedataviz.com/topics/graphs-and-networks/",
+    "primary_category": "existing_repositories",
+    "role": "Catálogo web de herramientas para grafos y redes, con foco en visualización.",
+    "interfaces": [
+      "web"
+    ],
+    "network_types": [
+      "graph_visualization"
+    ],
+    "scale_profile": "not_applicable",
+    "maturity": "living_catalog",
+    "cost_model": "verify_current_terms",
+    "verification_status": "web_search_checked_2026-10-18",
+    "source_origin": "researched_external",
+    "notes": "Catálogo de referencia para descubrimiento; criterios de ranking propios no equivalen a pruebas independientes."
+  }
+]

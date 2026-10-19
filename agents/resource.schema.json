@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Network Atlas Resource",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "url",
+    "primary_category",
+    "role",
+    "interfaces",
+    "network_types",
+    "scale_profile",
+    "maturity",
+    "cost_model",
+    "verification_status",
+    "source_origin",
+    "notes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "primary_category": {
+      "type": "string",
+      "enum": [
+        "desktop_exploration",
+        "web_hosted",
+        "python_analysis",
+        "web_visualization",
+        "r_analysis",
+        "scale_distributed",
+        "higher_order_temporal",
+        "research_layout_algorithms",
+        "datasets_benchmarks",
+        "graph_database_query",
+        "infrastructure_topology",
+        "domain_data_sources",
+        "domain_solutions",
+        "existing_repositories",
+        "learning_research",
+        "needs_triage"
+      ]
+    },
+    "role": {
+      "type": "string"
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "network_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "scale_profile": {
+      "type": "string"
+    },
+    "maturity": {
+      "type": "string"
+    },
+    "cost_model": {
+      "type": "string"
+    },
+    "verification_status": {
+      "type": "string"
+    },
+    "source_origin": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

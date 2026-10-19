@@ -1,0 +1,102 @@
+{
+  "primary_categories": [
+    {
+      "id": "desktop_exploration",
+      "label": "Aplicaciones de exploración",
+      "description": "Herramientas listas para importar, explorar o analizar sin construir una app."
+    },
+    {
+      "id": "web_hosted",
+      "label": "Productos web o alojados",
+      "description": "Interfaces web/SaaS para explorar, compartir o colaborar."
+    },
+    {
+      "id": "python_analysis",
+      "label": "Análisis y herramientas Python",
+      "description": "Bibliotecas para construir, transformar y analizar redes."
+    },
+    {
+      "id": "web_visualization",
+      "label": "Bibliotecas de visualización web",
+      "description": "Componentes para incorporar redes a una aplicación."
+    },
+    {
+      "id": "r_analysis",
+      "label": "Análisis/visualización R",
+      "description": "Métodos y vistas en flujos estadísticos reproducibles."
+    },
+    {
+      "id": "scale_distributed",
+      "label": "Computación a escala",
+      "description": "GPU, procesamiento distribuido y capas computacionales."
+    },
+    {
+      "id": "higher_order_temporal",
+      "label": "Temporal/multicapa/orden superior",
+      "description": "Modelos donde el tiempo, capas o relaciones grupales son parte de la estructura."
+    },
+    {
+      "id": "research_layout_algorithms",
+      "label": "Investigación de layouts",
+      "description": "Algoritmos y frameworks de dibujo de grafos."
+    },
+    {
+      "id": "datasets_benchmarks",
+      "label": "Datasets/benchmarks",
+      "description": "Datos, suites comparables y protocolos."
+    },
+    {
+      "id": "graph_database_query",
+      "label": "Analítica de bases de grafos",
+      "description": "Consulta/analítica sobre grafos persistidos."
+    },
+    {
+      "id": "infrastructure_topology",
+      "label": "Topología IT",
+      "description": "Inventario, conectividad y dependencias de infraestructura."
+    },
+    {
+      "id": "domain_data_sources",
+      "label": "Fuentes de datos de dominio",
+      "description": "Corpus/APIs para construir redes en un área específica."
+    },
+    {
+      "id": "domain_solutions",
+      "label": "Soluciones por dominio",
+      "description": "Flujos y herramientas especializadas en un dominio."
+    },
+    {
+      "id": "learning_research",
+      "label": "Aprendizaje y métodos de investigación",
+      "description": "Cursos, frameworks de ML sobre grafos y métodos especializados."
+    },
+    {
+      "id": "needs_triage",
+      "label": "Pendientes de clasificación",
+      "description": "Entradas cuya identidad o función todavía no está validada."
+    },
+    {
+      "id": "existing_repositories",
+      "label": "Índices/repo externos",
+      "description": "Colecciones de recursos que complementan este repositorio."
+    }
+  ],
+  "cross_cutting_dimensions": [
+    "graph_model",
+    "task",
+    "interface",
+    "scale_profile",
+    "maturity",
+    "cost_model",
+    "privacy_and_governance",
+    "formats",
+    "maintenance"
+  ],
+  "verification_states": [
+    "needs_link_resolution",
+    "primary_url_selected",
+    "official_page_checked_YYYY-MM-DD",
+    "official_docs_checked_YYYY-MM-DD",
+    "web_search_checked_YYYY-MM-DD"
+  ]
+}
